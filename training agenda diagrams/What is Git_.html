@@ -1,0 +1,638 @@
+<!DOCTYPE html>
+<!-- saved from url=(0045)https://www.educative.io/edpresso/what-is-git -->
+<html dir="ltr" lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><!--mui-inject-first--><style data-jss="" data-meta="PrivateHiddenCss">
+@media (min-width:320px) and (max-width:599.95px) {
+  .jss53 {
+    display: none;
+  }
+}
+@media (min-width:320px) {
+  .jss54 {
+    display: none;
+  }
+}
+@media (max-width:599.95px) {
+  .jss55 {
+    display: none;
+  }
+}
+@media (min-width:600px) and (max-width:799.95px) {
+  .jss56 {
+    display: none;
+  }
+}
+@media (min-width:600px) {
+  .jss57 {
+    display: none;
+  }
+}
+@media (max-width:799.95px) {
+  .jss58 {
+    display: none;
+  }
+}
+@media (min-width:800px) and (max-width:1024.95px) {
+  .jss59 {
+    display: none;
+  }
+}
+@media (min-width:800px) {
+  .jss60 {
+    display: none;
+  }
+}
+@media (max-width:1024.95px) {
+  .jss61 {
+    display: none;
+  }
+}
+@media (min-width:1025px) and (max-width:1919.95px) {
+  .jss62 {
+    display: none;
+  }
+}
+@media (min-width:1025px) {
+  .jss63 {
+    display: none;
+  }
+}
+@media (max-width:1919.95px) {
+  .jss64 {
+    display: none;
+  }
+}
+@media (min-width:1920px) {
+  .jss65 {
+    display: none;
+  }
+}
+@media (min-width:1920px) {
+  .jss66 {
+    display: none;
+  }
+}
+@media (min-width:320px) {
+  .jss67 {
+    display: none;
+  }
+}
+</style><style data-jss="" data-meta="MuiTypography">
+.MuiTypography-root {
+  margin: 0;
+}
+.MuiTypography-body2 {
+  font-size: 0.875rem;
+  font-family: "Nunito Sans", Verdana, Helvetica, sans-serif;
+  font-weight: 400;
+  line-height: 1.43;
+}
+.MuiTypography-body1 {
+  font-size: 1rem;
+  font-family: "Nunito Sans", Verdana, Helvetica, sans-serif;
+  font-weight: 400;
+  line-height: 1.5;
+}
+.MuiTypography-caption {
+  font-size: 0.75rem;
+  font-family: "Nunito Sans", Verdana, Helvetica, sans-serif;
+  font-weight: 400;
+  line-height: 1.66;
+}
+.MuiTypography-button {
+  font-size: 0.875rem;
+  font-family: "Nunito Sans", Verdana, Helvetica, sans-serif;
+  font-weight: 500;
+  line-height: 1.75;
+  text-transform: uppercase;
+}
+.MuiTypography-h1 {
+  margin: 0;
+  font-size: 6rem;
+  text-align: center;
+  font-family: "Nunito Sans", Verdana, Helvetica, sans-serif;
+  font-weight: 300;
+  line-height: 1.167;
+}
+.MuiTypography-h2 {
+  font-size: 3.75rem;
+  font-family: "Nunito Sans", Verdana, Helvetica, sans-serif;
+  font-weight: 300;
+  line-height: 1.2;
+}
+.MuiTypography-h3 {
+  font-size: 3rem;
+  font-family: "Nunito Sans", Verdana, Helvetica, sans-serif;
+  font-weight: 400;
+  line-height: 1.167;
+}
+.MuiTypography-h4 {
+  font-size: 2.125rem;
+  font-family: "Nunito Sans", Verdana, Helvetica, sans-serif;
+  font-weight: 400;
+  line-height: 1.235;
+}
+.MuiTypography-h5 {
+  font-size: 1.5rem;
+  font-family: "Nunito Sans", Verdana, Helvetica, sans-serif;
+  font-weight: 400;
+  line-height: 1.334;
+}
+.MuiTypography-h6 {
+  font-size: 1.25rem;
+  font-family: "Nunito Sans", Verdana, Helvetica, sans-serif;
+  font-weight: 500;
+  line-height: 1.6;
+}
+.MuiTypography-subtitle1 {
+  font-size: 1rem;
+  font-family: "Nunito Sans", Verdana, Helvetica, sans-serif;
+  font-weight: 400;
+  line-height: 1.75;
+}
+.MuiTypography-subtitle2 {
+  font-size: 0.875rem;
+  font-family: "Nunito Sans", Verdana, Helvetica, sans-serif;
+  font-weight: 500;
+  line-height: 1.57;
+}
+.MuiTypography-overline {
+  font-size: 0.75rem;
+  font-family: "Nunito Sans", Verdana, Helvetica, sans-serif;
+  font-weight: 400;
+  line-height: 2.66;
+  text-transform: uppercase;
+}
+.MuiTypography-srOnly {
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  position: absolute;
+}
+.MuiTypography-alignLeft {
+  text-align: left;
+}
+.MuiTypography-alignCenter {
+  text-align: center;
+}
+.MuiTypography-alignRight {
+  text-align: right;
+}
+.MuiTypography-alignJustify {
+  text-align: justify;
+}
+.MuiTypography-noWrap {
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+.MuiTypography-gutterBottom {
+  margin-bottom: 0.35em;
+}
+.MuiTypography-paragraph {
+  margin-bottom: 16px;
+}
+.MuiTypography-colorInherit {
+  color: inherit;
+}
+.MuiTypography-colorPrimary {
+  color: #5553FF;
+}
+.MuiTypography-colorSecondary {
+  color: #53ACFF;
+}
+.MuiTypography-colorTextPrimary {
+  color: rgba(0, 0, 0, 0.87);
+}
+.MuiTypography-colorTextSecondary {
+  color: rgba(0, 0, 0, 0.54);
+}
+.MuiTypography-colorError {
+  color: #D42154;
+}
+.MuiTypography-displayInline {
+  display: inline;
+}
+.MuiTypography-displayBlock {
+  display: block;
+}
+</style><style data-jss="" data-meta="makeStyles">
+.jss2 {
+  font-size: 8rem;
+  font-weight: 300;
+  line-height: 92px;
+  letter-spacing: -2px;
+}
+@media(max-width: 768px) {
+  .jss2 {
+    font-size: 6rem;
+    line-height: 68px;
+    letter-spacing: -1.2px;
+  }
+}
+.jss3 {
+  font-size: 5rem;
+  font-weight: 600;
+  line-height: 1.25;
+  letter-spacing: 0px;
+}
+@media(max-width: 768px) {
+  .jss3 {
+    font-size: 4rem;
+    letter-spacing: 0.25px;
+  }
+}
+.jss4 {
+  font-size: 4rem;
+  font-weight: 600;
+  line-height: 1.5;
+  letter-spacing: 0.25px;
+}
+@media(max-width: 768px) {
+  .jss4 {
+    font-size: 3.4rem;
+  }
+}
+.jss5 {
+  font-size: 3.2rem;
+  font-weight: 600;
+  line-height: 1.5;
+  letter-spacing: 0.25px;
+}
+@media(max-width: 768px) {
+  .jss5 {
+    font-size: 2.8rem;
+  }
+}
+.jss6 {
+  font-size: 2.4rem;
+  font-weight: 600;
+  line-height: 1.5;
+  letter-spacing: 0.25px;
+}
+@media(max-width: 768px) {
+  .jss6 {
+    font-size: 2.2rem;
+  }
+}
+.jss7 {
+  font-size: 2rem;
+  font-weight: 600;
+  line-height: 1.5;
+  letter-spacing: 0.25px;
+}
+@media(max-width: 768px) {
+  .jss7 {
+    font-weight: 700;
+  }
+}
+.jss8 {
+  font-size: 1.6rem;
+  font-weight: 700;
+  line-height: 1.5;
+  letter-spacing: 0.5px;
+}
+.jss9 {
+  font-size: 1.4rem;
+  font-weight: 400;
+  line-height: 1.5;
+  letter-spacing: 0.15px;
+}
+.jss10 {
+  font-size: 1.6rem;
+  font-weight: 400;
+  line-height: 1.5;
+  letter-spacing: 0.15px;
+}
+.jss11 {
+  font-size: 2rem;
+  font-weight: 400;
+  line-height: 1.5;
+  letter-spacing: 0.15px;
+}
+.jss12 {
+  font-size: 1.5rem;
+  font-weight: 700;
+  line-height: 24px;
+  letter-spacing: 0.35px;
+}
+.jss13 {
+  font-size: 1.2rem;
+  font-weight: 700;
+  line-height: 24px;
+  letter-spacing: 0.35px;
+}
+.jss14 {
+  font-size: 1.2rem;
+  font-weight: 600;
+  line-height: 1.5;
+  letter-spacing: 0.5px;
+}
+.jss15 {
+  font-size: 1.2rem;
+  font-weight: 700;
+  letter-spacing: 2.5px;
+  text-transform: uppercase;
+}
+</style><style data-jss="" data-meta="makeStyles">
+
+</style><style data-jss="" data-meta="makeStyles">
+</style><style data-jss="" data-meta="makeStyles">
+</style><style data-jss="" data-meta="makeStyles">
+</style><style data-jss="" data-meta="makeStyles">
+</style><style data-jss="" data-meta="makeStyles">
+</style><style data-jss="" data-meta="makeStyles">
+</style><style data-jss="" data-meta="makeStyles">
+</style><style data-jss="" data-meta="makeStyles">
+</style><style data-jss="" data-meta="makeStyles">
+</style><style data-jss="" data-meta="makeStyles">
+</style><style data-jss="" data-meta="makeStyles">
+</style><style data-jss="" data-meta="makeStyles">
+</style><style data-jss="" data-meta="makeStyles">
+</style><style data-jss="" data-meta="makeStyles">
+</style><style data-jss="" data-meta="makeStyles">
+</style><style data-jss="" data-meta="makeStyles">
+</style><style data-jss="" data-meta="makeStyles">
+</style><style data-jss="" data-meta="makeStyles">
+</style><style data-jss="" data-meta="makeStyles">
+</style><style data-jss="" data-meta="makeStyles">
+</style><style data-jss="" data-meta="makeStyles">
+</style><style data-jss="" data-meta="makeStyles">
+</style><style data-jss="" data-meta="makeStyles">
+</style><style data-jss="" data-meta="makeStyles">
+</style><style data-jss="" data-meta="makeStyles">
+</style><style data-jss="" data-meta="makeStyles">
+</style><style data-jss="" data-meta="makeStyles">
+</style><style data-jss="" data-meta="makeStyles">
+</style><style data-jss="" data-meta="makeStyles">
+</style><style data-jss="" data-meta="makeStyles">
+</style><style data-jss="" data-meta="makeStyles">
+</style><style data-jss="" data-meta="makeStyles">
+</style><style data-jss="" data-meta="makeStyles">
+</style><style data-jss="" data-meta="makeStyles">
+</style><style data-jss="" data-meta="makeStyles">
+</style><style data-jss="" data-meta="makeStyles">
+</style><style data-jss="" data-meta="makeStyles">
+</style><style data-jss="" data-meta="makeStyles">
+</style><style data-jss="" data-meta="makeStyles">
+</style><style data-jss="" data-meta="makeStyles">
+</style><style data-jss="" data-meta="makeStyles">
+.jss1 {
+  display: flex;
+}
+@media (max-width:479.95px) {
+  .jss1 {
+    margin-top: 24px;
+    text-align: center;
+  }
+}
+</style><meta name="viewport" content="width=device-width, initial-scale=1.0"><meta property="fb:app_id" content="530312767132745"><meta property="og:type" content="website"><meta property="og:locale" content="en_US"><meta property="og:site_name" content="Educative: Interactive Courses for Software Developers"><meta name="twitter:site" content="@educativeinc"><meta name="twitter:domain" content="educative.io"><link rel="shortcut icon" type="image/x-icon" href="https://www.educative.io/static/favicons/faviconV2.png" id="favicon-scheme"><script type="text/javascript" async="" src="./What is Git__files/insight.min.js.download"></script><script async="" src="./What is Git__files/uwt.js.download"></script><script src="./What is Git__files/1637285686566701" async=""></script><script async="" src="./What is Git__files/fbevents.js.download"></script><script type="text/javascript" async="" src="./What is Git__files/analytics.js.download"></script><script async="" src="./What is Git__files/gtm.js.download"></script><script type="application/ld+json">{"@context":"http://schema.org/","@type":"EducationalOrganization","url":"https://www.educative.io","logo":"https://www.educative.io/static/imgs/logos/MainLogoV2.png"}</script><script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-W3ZFCR2');</script><meta name="viewport" content="width=device-width"><meta property="og:image" content="https://www.educative.io/static/imgs/logos/LinkImageV2.jpg"><meta property="og:image:secure_url" content="https://www.educative.io/static/imgs/logos/LinkImageV2.jpg"><meta name="twitter:card" content="summary"><meta property="og:url" content="/edpresso/what-is-git"><script type="application/ld+json">{"@context":"http://schema.org/","@type":"TechArticle","description":"What is Git?","headline":"What is Git?","name":"What is Git?","image":"https://www.educative.io/static/imgs/logos/EdpressoLogo2.png","keywords":"git,github,version,control","dateModified":"2020-02-28T17:09:23.518Z","datePublished":"2020-02-28T17:09:23.518Z","mainEntityOfPage":"https://www.educative.io","author":{"@type":"Person","name":"Edpresso Editor"},"publisher":{"@type":"EducationalOrganization","name":"Educative","legalName":"Educative Inc","logo":{"@type":"ImageObject","url":"https://www.educative.io/static/imgs/logos/MainLogoV2.png"}}}</script><title>What is Git?</title><meta property="og:title" content="What is Git?"><meta name="twitter:title" content="What is Git?"><meta name="description" content="What is Git?"><meta property="og:description" content="What is Git?"><meta name="twitter:description" content="What is Git?"><meta name="keywords" content="{{keywords}}"><meta property="og:image" content="https://www.educative.io/static/imgs/logos/EdpressoLogo2.png"><meta property="og:image:secure_url" content="https://www.educative.io/static/imgs/logos/EdpressoLogo2.png"><meta name="twitter:image:src" content="https://www.educative.io/static/imgs/logos/EdpressoLogo2.png"><meta property="og:image:width" content="1024"><meta property="og:image:height" content="512"><meta property="og:image:alt" content="A simmering coffee mug"><meta name="next-head-count" content="20"><link rel="preload" href="./What is Git__files/916796c7d64a879b9de4.css" as="style"><link rel="stylesheet" href="./What is Git__files/916796c7d64a879b9de4.css"><link rel="preload" href="./What is Git__files/21b1c75a57598716de57.css" as="style"><link rel="stylesheet" href="./What is Git__files/21b1c75a57598716de57.css"><link rel="preload" href="./What is Git__files/cb1608f2.8be791501eb36166e856.js.download" as="script"><link rel="preload" href="./What is Git__files/commons.2b438201b1eebd47096e.js.download" as="script"><link rel="preload" href="./What is Git__files/8220a32b6df89e6d4caf77dcc15d861e1ec89623.b6c2ea66eab1ecc7d9ed.js.download" as="script"><link rel="preload" href="./What is Git__files/6bed4a6a7a762349ccc50bf59be777fe8d84fef6.ce900f70d6e715c94ff2.js.download" as="script"><link rel="preload" href="./What is Git__files/208.6d151e8478388dfd57be.js.download" as="script"><link rel="preload" href="./What is Git__files/4e8bfbd537fc53fab5c471aa7809402a14355ee0.5bd94a6b47448a30a1ef.js.download" as="script"><link rel="preload" href="./What is Git__files/a2ae04b7a833ed6fd1ce37130abd264ebd97e830.a88cdb11bc5776f5bf57.js.download" as="script"><link rel="preload" href="./What is Git__files/main-d9b1724aca56a69b62fb.js.download" as="script"><link rel="preload" href="./What is Git__files/webpack-7e25c12d7beeac3a38cf.js.download" as="script"><link rel="preload" href="./What is Git__files/framework.3cf562bb8baea43ab517.js.download" as="script"><link rel="preload" href="./What is Git__files/commons.2b438201b1eebd47096e.js.download" as="script"><link rel="preload" href="./What is Git__files/e5e771bd30370f474e903313af4271a4c93719da.c444dbdf01bcbc564973.js.download" as="script"><link rel="preload" href="./What is Git__files/980e87bb855c8a765aa8b63daf4e329f4668e2c9.819f29611d606b7b0ff9.js.download" as="script"><link rel="preload" href="./What is Git__files/d908d2ccfcc40e707a5bc0a2bb395e8674a5ca72.72e64403cd7db46bde5a.js.download" as="script"><link rel="preload" href="./What is Git__files/5871da5d65e55dd3f7211817b45524583965f99a.e0ee458a071abf83ee86.js.download" as="script"><link rel="preload" href="./What is Git__files/ab3fd235c0063d257cbe5afe39405e76340ba27a.aba30ef0f6e767ba8cfe.js.download" as="script"><link rel="preload" href="./What is Git__files/4e8bfbd537fc53fab5c471aa7809402a14355ee0.5bd94a6b47448a30a1ef.js.download" as="script"><link rel="preload" href="./What is Git__files/41436f92c375dd9cd244f3dc92ec661bba0dbb82.d3524027514b861c13ec.js.download" as="script"><link rel="preload" href="./What is Git__files/4ea6f1a74dd6038c9527c3b6c408d95bc9e584ca.4c6e95b99282444c0b99.js.download" as="script"><link rel="preload" href="./What is Git__files/61c07425e08786eaaaac198bf1f10df8a3af8ab4.e2a89187f8ccb99e59f8.js.download" as="script"><link rel="preload" href="./What is Git__files/941b621b2347af1650a375472daaf58379ce1d2f.92f88c584f2d7453a260.js.download" as="script"><link rel="preload" href="./What is Git__files/f1c87184703526c6230769688c8a82ce7d3e6e84.b2e070c4a831bf2d2f78.js.download" as="script"><link rel="preload" href="./What is Git__files/f04e4bda86fec8fcc45fe140b0c7cac556b27765.338c70a84029ed7bd9c0.js.download" as="script"><link rel="preload" href="./What is Git__files/66485a727f8019d1c60ee9d3d957f5c13e58312f.ac2dfdce279b396115c6.js.download" as="script"><link rel="preload" href="./What is Git__files/b4bd33ea001a76e40d64f33e4091039ace7f552c.e60ad8bb147cf31f8402.js.download" as="script"><link rel="preload" href="./What is Git__files/480b3523d85ca03ebbf5117d38fb8fe92edb11c6.49e444cc50acce462323.js.download" as="script"><link rel="preload" href="./What is Git__files/_app-a536b36b0d73e3206777.js.download" as="script"><link rel="preload" href="./What is Git__files/23f02a33ef50642cdbe8d441133844b532e83a5e.d44d4ef72ad9e5ae89a5.js.download" as="script"><link rel="preload" href="./What is Git__files/51c925bec50705ee9faa262cdaa9ab2fbd56062c.cbdc8fc9ca9a379c16b5.js.download" as="script"><link rel="preload" href="./What is Git__files/5d83d242c655da077ebf2e202aa39652109eabf1.01186f3e9d1a151746a2.js.download" as="script"><link rel="preload" href="./What is Git__files/8220a32b6df89e6d4caf77dcc15d861e1ec89623.b6c2ea66eab1ecc7d9ed.js.download" as="script"><link rel="preload" href="./What is Git__files/438c2c98709fb01db7fac2ed98499c3b88ab535b.a6d95bc34b26f4ebee81.js.download" as="script"><link rel="preload" href="./What is Git__files/c90ea11cac6326305fc8b7fd20ce1ef8c060c9e9.96e0455369797b875467.js.download" as="script"><link rel="preload" href="./What is Git__files/bed8c850cd3d15202c344ca5804dc72cd1d794bc.69e3a681e716cbc18ce5.js.download" as="script"><link rel="preload" href="./What is Git__files/30bd572feb59c908f55b65a868bdc61e49c7bcb7.5e46a851f5a7d0dfbe84.js.download" as="script"><link rel="preload" href="./What is Git__files/017229d987c0ff3fec686590661dfd5944f6850c.ff15ea897844d0ba2719.js.download" as="script"><link rel="preload" href="./What is Git__files/eb77ac5beb715ad0ccd41257c2def8460035fd4e.e677012460059cf05b71.js.download" as="script"><link rel="preload" href="./What is Git__files/[shotUrl]-aa58a560833c323adfc2.js.download" as="script"><script async="" src="./What is Git__files/hotjar-1142875.js.download"></script><style data-styled="" data-styled-version="4.3.2"></style><script charset="utf-8" src="./What is Git__files/a2ae04b7a833ed6fd1ce37130abd264ebd97e830.a88cdb11bc5776f5bf57.js.download"></script><script charset="utf-8" src="./What is Git__files/43ea133b.ff816d04584bd1768b18.js.download"></script><script charset="utf-8" src="./What is Git__files/346.358bdfcb956fa9436af7.js.download"></script><script async="" src="./What is Git__files/modules.ff34de88541a59e5fddf.js.download" charset="utf-8"></script><style type="text/css">iframe#_hjRemoteVarsFrame {display: none !important; width: 1px !important; height: 1px !important; opacity: 0 !important; pointer-events: none !important;}</style><script charset="utf-8" src="./What is Git__files/004beebb.5b149aa5283331a0065a.js.download"></script><link rel="stylesheet" type="text/css" href="./What is Git__files/9df7c593c72324404c1b.css"><script charset="utf-8" src="./What is Git__files/c8f7fe3b0e41be846d5687592cf2018ff6e22687_CSS.73f56af37fc325166801.js.download"></script><link href="./What is Git__files/5d83d242c655da077ebf2e202aa39652109eabf1.01186f3e9d1a151746a2.js.download" rel="prefetch" as="script"><link href="./What is Git__files/8220a32b6df89e6d4caf77dcc15d861e1ec89623.b6c2ea66eab1ecc7d9ed.js.download" rel="prefetch" as="script"><link href="./What is Git__files/c90ea11cac6326305fc8b7fd20ce1ef8c060c9e9.96e0455369797b875467.js.download" rel="prefetch" as="script"><link href="./What is Git__files/bed8c850cd3d15202c344ca5804dc72cd1d794bc.69e3a681e716cbc18ce5.js.download" rel="prefetch" as="script"><link href="./What is Git__files/caf53a100c1cf2aac36b78866f1b947a30402092.44b10948b53d3109416b.js.download" rel="prefetch" as="script"><link href="./What is Git__files/ee9737fbbc087befb8d59d661cf1a60c26e9cb98.d460b54e735999884406.js.download" rel="prefetch" as="script"><link href="./What is Git__files/197dadf55689241dec8b4d5984dad0aa27708c99.f7a4fc3e90eb3cc2fe24.js.download" rel="prefetch" as="script"><link href="./What is Git__files/6ba18066ad5f36a1f1a704f171d8f7f087031f6c.bffb6ed1d7ad59592023.js.download" rel="prefetch" as="script"><link href="./What is Git__files/bd42c76cc555bcbea51ecd2e196900b9ff043284.c66bb1939e5feaa71e37.js.download" rel="prefetch" as="script"><link href="./What is Git__files/9249b1a60572f3e7608ce86426b02a84f40cfd5d.a0cecb4b2905cfaae2f8.js.download" rel="prefetch" as="script"><link href="./What is Git__files/edpresso-268320a1bb5e1aa8470c.js.download" rel="prefetch" as="script"><link href="https://www.educative.io/_next/static/chunks/a9a7754c.dd58b5d8c2e043d1784f.js" rel="prefetch" as="script"><link href="./What is Git__files/30bd572feb59c908f55b65a868bdc61e49c7bcb7.5e46a851f5a7d0dfbe84.js.download" rel="prefetch" as="script"><link href="./What is Git__files/eb77ac5beb715ad0ccd41257c2def8460035fd4e.e677012460059cf05b71.js.download" rel="prefetch" as="script"><link href="https://www.educative.io/_next/static/chunks/d36459ae782c4daf1df68598e738b090ffc60af8.aeb9e1dc068aef45157d.js" rel="prefetch" as="script"><link href="https://www.educative.io/_next/static/chunks/2f859f669bf2a7f9f0b3f9985b7125d765ab7987.7d4704f95eb6d8805d40.js" rel="prefetch" as="script"><link href="https://www.educative.io/_next/static/chunks/c2bbc97ac8ebc78d5174a07d4aa7122ad75fa923.a70a5969999c2b622855.js" rel="prefetch" as="script"><link href="https://www.educative.io/_next/static/chunks/a92b6de44785fa0c6e296642dfd578f7b3cd1c4b.eb89106be57ed8a93960.js" rel="prefetch" as="script"><link href="https://www.educative.io/_next/static/chunks/c7ec7a89d98a93183bea1d3d16d31840958f47bd.5f80cb597fd64acd3afe.js" rel="prefetch" as="script"><link href="https://www.educative.io/_next/static/pages/index-36c88bdeeec7259839af.js" rel="prefetch" as="script"><style type="text/css" media="screen" class="monaco-colors">.monaco-editor .accessibilityHelpWidget { background-color: #252526; }
+.monaco-editor .accessibilityHelpWidget { color: #cccccc; }
+.monaco-editor .accessibilityHelpWidget { box-shadow: 0 2px 8px #000000; }
+.monaco-editor, .monaco-editor-background, .monaco-editor .inputarea.ime-input { background-color: #1e1e1e; }
+.monaco-editor, .monaco-editor .inputarea.ime-input { color: #d4d4d4; }
+.monaco-editor .margin { background-color: #1e1e1e; }
+.monaco-editor .rangeHighlight { background-color: rgba(255, 255, 255, 0.04); }
+.monaco-editor .symbolHighlight { background-color: rgba(234, 92, 0, 0.33); }
+.vs-whitespace { color: rgba(227, 228, 226, 0.16) !important; }
+.monaco-editor .bracket-match { background-color: rgba(0, 100, 0, 0.1); }
+.monaco-editor .bracket-match { border: 1px solid #888888; }
+.monaco-editor .monaco-editor-overlaymessage .anchor { border-top-color: #007acc; }
+.monaco-editor .monaco-editor-overlaymessage .message { border: 1px solid #007acc; }
+.monaco-editor .monaco-editor-overlaymessage .message { background-color: #063b49; }
+
+		.monaco-editor .contentWidgets .codicon-lightbulb,
+		.monaco-workbench .markers-panel-container .codicon-lightbulb {
+			color: #ffcc00;
+		}
+
+		.monaco-editor .contentWidgets .codicon-lightbulb-autofix,
+		.monaco-workbench .markers-panel-container .codicon-lightbulb-autofix {
+			color: #75beff;
+		}
+.monaco-editor .codelens-decoration { color: #999999; }
+.monaco-editor .codelens-decoration > a:hover { color: #4e94ce !important; }
+.monaco-editor .findOptionsWidget { background-color: #252526; }
+.monaco-editor .findOptionsWidget { color: #cccccc; }
+.monaco-editor .findOptionsWidget { box-shadow: 0 2px 8px #000000; }
+.monaco-editor .findMatch { background-color: rgba(234, 92, 0, 0.33); }
+.monaco-editor .currentFindMatch { background-color: #515c6a; }
+.monaco-editor .findScope { background-color: rgba(58, 61, 65, 0.4); }
+.monaco-editor .find-widget { background-color: #252526; }
+.monaco-editor .find-widget { box-shadow: 0 2px 8px #000000; }
+.monaco-editor .find-widget { color: #cccccc; }
+.monaco-editor .find-widget.no-results .matchesCount { color: #f48771; }
+.monaco-editor .find-widget .monaco-sash { background-color: #454545; width: 3px !important; margin-left: -4px;}
+.monaco-workbench .monaco-editor .find-widget .monaco-inputbox.synthetic-focus { outline-color: rgba(14, 99, 156, 0.8); }
+.monaco-editor .line-numbers { color: #858585; }
+.monaco-editor .current-line ~ .line-numbers { color: #c6c6c6; }
+.monaco-editor .view-overlays .current-line { border: 2px solid #282828; }
+.monaco-editor .margin-view-overlays .current-line-margin { border: 2px solid #282828; }
+.monaco-editor .lines-content .cigr { box-shadow: 1px 0 0 0 #404040 inset; }
+.monaco-editor .lines-content .cigra { box-shadow: 1px 0 0 0 #707070 inset; }
+.monaco-editor .minimap-slider, .monaco-editor .minimap-slider .minimap-slider-horizontal { background: rgba(121, 121, 121, 0.2); }
+.monaco-editor .minimap-slider:hover, .monaco-editor .minimap-slider:hover .minimap-slider-horizontal { background: rgba(100, 100, 100, 0.35); }
+.monaco-editor .minimap-slider.active, .monaco-editor .minimap-slider.active .minimap-slider-horizontal { background: rgba(191, 191, 191, 0.2); }
+.monaco-editor .minimap-shadow-visible { box-shadow: #000000 -6px 0 6px -6px inset; }
+.monaco-editor .view-ruler { box-shadow: 1px 0 0 0 #5a5a5a inset; }
+.monaco-editor .scroll-decoration { box-shadow: #000000 0 6px 6px -6px inset; }
+.monaco-editor .focused .selected-text { background-color: #264f78; }
+.monaco-editor .selected-text { background-color: #3a3d41; }
+.monaco-editor .cursor { background-color: #aeafad; border-color: #aeafad; color: #515052; }
+.monaco-editor .squiggly-error { background: url("data:image/svg+xml,%3Csvg%20xmlns%3D'http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg'%20viewBox%3D'0%200%206%203'%20enable-background%3D'new%200%200%206%203'%20height%3D'3'%20width%3D'6'%3E%3Cg%20fill%3D'%23f48771'%3E%3Cpolygon%20points%3D'5.5%2C0%202.5%2C3%201.1%2C3%204.1%2C0'%2F%3E%3Cpolygon%20points%3D'4%2C0%206%2C2%206%2C0.6%205.4%2C0'%2F%3E%3Cpolygon%20points%3D'0%2C2%201%2C3%202.4%2C3%200%2C0.6'%2F%3E%3C%2Fg%3E%3C%2Fsvg%3E") repeat-x bottom left; }
+.monaco-editor .squiggly-warning { background: url("data:image/svg+xml,%3Csvg%20xmlns%3D'http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg'%20viewBox%3D'0%200%206%203'%20enable-background%3D'new%200%200%206%203'%20height%3D'3'%20width%3D'6'%3E%3Cg%20fill%3D'%23cca700'%3E%3Cpolygon%20points%3D'5.5%2C0%202.5%2C3%201.1%2C3%204.1%2C0'%2F%3E%3Cpolygon%20points%3D'4%2C0%206%2C2%206%2C0.6%205.4%2C0'%2F%3E%3Cpolygon%20points%3D'0%2C2%201%2C3%202.4%2C3%200%2C0.6'%2F%3E%3C%2Fg%3E%3C%2Fsvg%3E") repeat-x bottom left; }
+.monaco-editor .squiggly-info { background: url("data:image/svg+xml,%3Csvg%20xmlns%3D'http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg'%20viewBox%3D'0%200%206%203'%20enable-background%3D'new%200%200%206%203'%20height%3D'3'%20width%3D'6'%3E%3Cg%20fill%3D'%2375beff'%3E%3Cpolygon%20points%3D'5.5%2C0%202.5%2C3%201.1%2C3%204.1%2C0'%2F%3E%3Cpolygon%20points%3D'4%2C0%206%2C2%206%2C0.6%205.4%2C0'%2F%3E%3Cpolygon%20points%3D'0%2C2%201%2C3%202.4%2C3%200%2C0.6'%2F%3E%3C%2Fg%3E%3C%2Fsvg%3E") repeat-x bottom left; }
+.monaco-editor .squiggly-hint { background: url("data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20height%3D%223%22%20width%3D%2212%22%3E%3Cg%20fill%3D%22rgba(238%2C%20238%2C%20238%2C%200.7)%22%3E%3Ccircle%20cx%3D%221%22%20cy%3D%221%22%20r%3D%221%22%2F%3E%3Ccircle%20cx%3D%225%22%20cy%3D%221%22%20r%3D%221%22%2F%3E%3Ccircle%20cx%3D%229%22%20cy%3D%221%22%20r%3D%221%22%2F%3E%3C%2Fg%3E%3C%2Fsvg%3E") no-repeat bottom left; }
+.monaco-editor.showUnused .squiggly-inline-unnecessary { opacity: 0.667; }
+.monaco-editor .squiggly-inline-deprecated { text-decoration: line-through; text-decoration-color: #d4d4d4}
+
+			.monaco-editor .zone-widget .codicon-error,
+			.monaco-workbench .markers-panel .marker-icon.codicon-error,
+			.monaco-workbench .extensions-viewlet > .extensions .codicon-error,
+			.monaco-workbench .dialog-box .dialog-message-row .codicon-error {
+				color: #f48771;
+			}
+		
+
+			.monaco-editor .zone-widget .codicon-warning,
+			.monaco-workbench .markers-panel .marker-icon.codicon-warning,
+			.monaco-workbench .extensions-viewlet > .extensions .codicon-warning,
+			.monaco-workbench .extension-editor .codicon-warning,
+			.monaco-workbench .dialog-box .dialog-message-row .codicon-warning {
+				color: #cca700;
+			}
+		
+
+			.monaco-editor .zone-widget .codicon-info,
+			.monaco-workbench .markers-panel .marker-icon.codicon-info,
+			.monaco-workbench .extensions-viewlet > .extensions .codicon-info,
+			.monaco-workbench .extension-editor .codicon-info,
+			.monaco-workbench .dialog-box .dialog-message-row .codicon-info {
+				color: #75beff;
+			}
+		
+.monaco-editor .marker-widget a { color: #3794ff; }
+.monaco-editor .reference-zone-widget .ref-tree .referenceMatch .highlight { background-color: rgba(234, 92, 0, 0.3); }
+.monaco-editor .reference-zone-widget .preview .reference-decoration { background-color: rgba(255, 143, 0, 0.6); }
+.monaco-editor .reference-zone-widget .ref-tree { background-color: #252526; }
+.monaco-editor .reference-zone-widget .ref-tree { color: #bbbbbb; }
+.monaco-editor .reference-zone-widget .ref-tree .reference-file { color: #ffffff; }
+.monaco-editor .reference-zone-widget .ref-tree .monaco-list:focus .monaco-list-rows > .monaco-list-row.selected:not(.highlighted) { background-color: rgba(51, 153, 255, 0.2); }
+.monaco-editor .reference-zone-widget .ref-tree .monaco-list:focus .monaco-list-rows > .monaco-list-row.selected:not(.highlighted) { color: #ffffff !important; }
+.monaco-editor .reference-zone-widget .preview .monaco-editor .monaco-editor-background,.monaco-editor .reference-zone-widget .preview .monaco-editor .inputarea.ime-input {	background-color: #001f33;}
+.monaco-editor .reference-zone-widget .preview .monaco-editor .margin {	background-color: #001f33;}
+.monaco-editor .goto-definition-link { color: #4e94ce !important; }
+.monaco-editor .hoverHighlight { background-color: rgba(38, 79, 120, 0.25); }
+.monaco-editor .monaco-editor-hover { background-color: #252526; }
+.monaco-editor .monaco-editor-hover { border: 1px solid #454545; }
+.monaco-editor .monaco-editor-hover .hover-row:not(:first-child):not(:empty) { border-top: 1px solid rgba(69, 69, 69, 0.5); }
+.monaco-editor .monaco-editor-hover hr { border-top: 1px solid rgba(69, 69, 69, 0.5); }
+.monaco-editor .monaco-editor-hover hr { border-bottom: 0px solid rgba(69, 69, 69, 0.5); }
+.monaco-editor .monaco-editor-hover a { color: #3794ff; }
+.monaco-editor .monaco-editor-hover { color: #cccccc; }
+.monaco-editor .monaco-editor-hover .hover-row .actions { background-color: #2c2c2d; }
+.monaco-editor .monaco-editor-hover code { background-color: rgba(10, 10, 10, 0.4); }
+.monaco-editor.vs .valueSetReplacement { outline: solid 2px #888888; }
+.monaco-editor .tokens-inspect-widget { border: 1px solid #454545; }
+.monaco-editor .tokens-inspect-widget .tokens-inspect-separator { background-color: #454545; }
+.monaco-editor .tokens-inspect-widget { background-color: #252526; }
+.monaco-editor .tokens-inspect-widget { color: #cccccc; }
+.monaco-editor .detected-link-active { color: #4e94ce !important; }
+.monaco-editor .parameter-hints-widget { border: 1px solid #454545; }
+.monaco-editor .parameter-hints-widget.multiple .body { border-left: 1px solid rgba(69, 69, 69, 0.5); }
+.monaco-editor .parameter-hints-widget .signature.has-docs { border-bottom: 1px solid rgba(69, 69, 69, 0.5); }
+.monaco-editor .parameter-hints-widget { background-color: #252526; }
+.monaco-editor .parameter-hints-widget a { color: #3794ff; }
+.monaco-editor .parameter-hints-widget { color: #cccccc; }
+.monaco-editor .parameter-hints-widget code { background-color: rgba(10, 10, 10, 0.4); }
+.codicon-symbol-array { color: #cccccc !important; }
+.codicon-symbol-boolean { color: #cccccc !important; }
+.codicon-symbol-class { color: #ee9d28 !important; }
+.codicon-symbol-method { color: #b180d7 !important; }
+.codicon-symbol-color { color: #cccccc !important; }
+.codicon-symbol-constant { color: #cccccc !important; }
+.codicon-symbol-constructor { color: #b180d7 !important; }
+
+			.codicon-symbol-value,.codicon-symbol-enum { color: #ee9d28 !important; }
+.codicon-symbol-enum-member { color: #75beff !important; }
+.codicon-symbol-event { color: #ee9d28 !important; }
+.codicon-symbol-field { color: #75beff !important; }
+.codicon-symbol-file { color: #cccccc !important; }
+.codicon-symbol-folder { color: #cccccc !important; }
+.codicon-symbol-function { color: #b180d7 !important; }
+.codicon-symbol-interface { color: #75beff !important; }
+.codicon-symbol-key { color: #cccccc !important; }
+.codicon-symbol-keyword { color: #cccccc !important; }
+.codicon-symbol-module { color: #cccccc !important; }
+.codicon-symbol-namespace { color: #cccccc !important; }
+.codicon-symbol-null { color: #cccccc !important; }
+.codicon-symbol-number { color: #cccccc !important; }
+.codicon-symbol-object { color: #cccccc !important; }
+.codicon-symbol-operator { color: #cccccc !important; }
+.codicon-symbol-package { color: #cccccc !important; }
+.codicon-symbol-property { color: #cccccc !important; }
+.codicon-symbol-reference { color: #cccccc !important; }
+.codicon-symbol-snippet { color: #cccccc !important; }
+.codicon-symbol-string { color: #cccccc !important; }
+.codicon-symbol-struct { color: #cccccc !important; }
+.codicon-symbol-text { color: #cccccc !important; }
+.codicon-symbol-type-parameter { color: #cccccc !important; }
+.codicon-symbol-unit { color: #cccccc !important; }
+.codicon-symbol-variable { color: #75beff !important; }
+.monaco-editor .snippet-placeholder { background-color: rgba(124, 124, 124, 0.3); outline-color: transparent; }
+.monaco-editor .finish-snippet-placeholder { background-color: transparent; outline-color: #525252; }
+.monaco-editor .suggest-widget .monaco-list .monaco-list-row .monaco-highlighted-label .highlight { color: #0097fb; }
+.monaco-editor .suggest-widget { color: #d4d4d4; }
+.monaco-editor .suggest-widget a { color: #3794ff; }
+.monaco-editor .suggest-widget code { background-color: rgba(10, 10, 10, 0.4); }
+.monaco-editor .focused .selectionHighlight { background-color: rgba(173, 214, 255, 0.15); }
+.monaco-editor .selectionHighlight { background-color: rgba(173, 214, 255, 0.07); }
+.monaco-editor .wordHighlight { background-color: rgba(87, 87, 87, 0.72); }
+.monaco-editor .wordHighlightStrong { background-color: rgba(0, 73, 114, 0.72); }
+.monaco-diff-editor .diff-review-line-number { color: #858585; }
+.monaco-diff-editor .diff-review-shadow { box-shadow: #000000 0 -6px 6px -6px inset; }
+.monaco-editor .line-insert, .monaco-editor .char-insert { background-color: rgba(155, 185, 85, 0.2); }
+.monaco-diff-editor .line-insert, .monaco-diff-editor .char-insert { background-color: rgba(155, 185, 85, 0.2); }
+.monaco-editor .inline-added-margin-view-zone { background-color: rgba(155, 185, 85, 0.2); }
+.monaco-editor .line-delete, .monaco-editor .char-delete { background-color: rgba(255, 0, 0, 0.2); }
+.monaco-diff-editor .line-delete, .monaco-diff-editor .char-delete { background-color: rgba(255, 0, 0, 0.2); }
+.monaco-editor .inline-deleted-margin-view-zone { background-color: rgba(255, 0, 0, 0.2); }
+.monaco-diff-editor.side-by-side .editor.modified { box-shadow: -6px 0 5px -5px #000000; }
+
+.mtk1 { color: #d4d4d4; }
+.mtk2 { color: #1e1e1e; }
+.mtk3 { color: #cc6666; }
+.mtk4 { color: #9cdcfe; }
+.mtk5 { color: #ce9178; }
+.mtk6 { color: #b5cea8; }
+.mtk7 { color: #608b4e; }
+.mtk8 { color: #569cd6; }
+.mtk9 { color: #dcdcdc; }
+.mtk10 { color: #808080; }
+.mtk11 { color: #f44747; }
+.mtk12 { color: #c586c0; }
+.mtk13 { color: #a79873; }
+.mtk14 { color: #dd6a6f; }
+.mtk15 { color: #5bb498; }
+.mtk16 { color: #909090; }
+.mtk17 { color: #778899; }
+.mtk18 { color: #ff00ff; }
+.mtk19 { color: #b46695; }
+.mtk20 { color: #ff0000; }
+.mtk21 { color: #4f76ac; }
+.mtk22 { color: #3dc9b0; }
+.mtk23 { color: #74b0df; }
+.mtk24 { color: #4864aa; }
+.mtki { font-style: italic; }
+.mtkb { font-weight: bold; }
+.mtku { text-decoration: underline; text-underline-position: under; }</style></head><body><noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-W3ZFCR2" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript><div id="__next"><div></div><div class="ContainerWrapper-sc-1dtkkvl-0 vextX"><div class="styles__BannerTransitionGroup-sc-14k2cl6-4 dEbIUg"></div><div class="Page-s4ccdg-0 eZKWgN"><div class="styles__BannersContainer-sc-14k2cl6-1 gElKht"></div><div id="handleScroll" class="Content-sc-4rtn2v-0 eazNeW"><div class="fade-container"><div class="fade-container"><div class="Page-sc-1643uq9-0 fPGklo"><nav class="Header-sc-1ddqqjo-0 ilvhLF"><div style="display:flex;align-items:center"><a title="edpresso" class="Logo-sc-16vmoep-0 knRKLo"><svg width="128" height="38" fill="none" xmlns="http://www.w3.org/2000/svg"><g clip-path="url(#clip0)"><path d="M27.611 21.022v.007H5.921A5.929 5.929 0 000 26.951a5.929 5.929 0 005.922 5.922h.132v.706a3.97 3.97 0 003.97 3.97h15.884a3.97 3.97 0 003.97-3.97V21.022h-2.267zM5.921 30.56a3.613 3.613 0 01-3.608-3.61c0-1.988 1.62-3.608 3.609-3.608h.132v7.218h-.132zm19.506 4.72h-14.92a2.183 2.183 0 01-2.184-2.183v-9.755H27.61v9.755a2.183 2.183 0 01-2.183 2.184zM12.405 5.788c.082.239.176.476.285.704.112.238.246.509.422.864.198.378.42.744.66 1.09.208.294.405.597.59.903.161.265.298.544.408.832.1.272.149.558.146.848-.003.24-.072.478-.2.683a3.386 3.386 0 01-.53.672l-.101.097 1.796 1.648c.164-.164.32-.338.462-.522a4.92 4.92 0 00.726-1.207c.172-.44.258-.899.257-1.366 0-.309-.012-.58-.034-.806a3.408 3.408 0 00-.166-.724 4.654 4.654 0 00-.35-.75 15.24 15.24 0 00-.56-.904 53.326 53.326 0 01-1.083-1.713 3.265 3.265 0 01-.469-1.73 1.52 1.52 0 01.189-.728c.14-.253.309-.49.503-.704.2-.22.418-.426.649-.613.247-.198.453-.37.629-.524.1-.072.185-.159.255-.257L15.168 0a.937.937 0 00-.102.09c-.332.26-.654.54-.953.836a9.184 9.184 0 00-.91 1.018 5.513 5.513 0 00-.689 1.158 3.19 3.19 0 00-.291 1.298c-.001.24.01.483.037.721.023.226.073.45.145.667zM18.767 10.24c.08.24.176.477.285.705.112.238.246.509.422.864.197.378.42.744.66 1.09.207.294.405.597.59.903.16.264.297.544.407.832.1.272.15.558.147.848-.003.24-.073.478-.201.683a3.383 3.383 0 01-.529.672 5.152 5.152 0 01-.631.536 6.063 6.063 0 01-.46.313l1.824 1.673c.146-.096.288-.197.426-.304.372-.286.709-.621.997-.995.297-.363.543-.77.726-1.207.173-.44.258-.899.257-1.366 0-.309-.011-.58-.033-.806a3.408 3.408 0 00-.167-.724 4.64 4.64 0 00-.35-.75 15.178 15.178 0 00-.559-.904 53.173 53.173 0 01-1.084-1.713 3.265 3.265 0 01-.468-1.73c.001-.255.066-.506.188-.728.103-.187.222-.364.355-.53l-1.709-1.57c-.102.119-.202.24-.297.365a5.517 5.517 0 00-.688 1.158 3.193 3.193 0 00-.292 1.298c-.001.24.01.483.037.721.025.226.075.45.147.667z" fill="#5553FF"></path><path d="M46.587 24.58a5.11 5.11 0 00-1.997-1.986c-.84-.463-1.772-.694-2.796-.694-1.079 0-2.044.249-2.898.747a5.283 5.283 0 00-2.007 2.082c-.484.89-.727 1.89-.727 3 0 1.125.248 2.132.747 3.021a5.264 5.264 0 002.12 2.082c.915.499 1.973.747 3.175.747.943 0 1.788-.156 2.54-.47a4.493 4.493 0 001.843-1.387l-1.352-1.644c-.792.826-1.782 1.24-2.97 1.24-.806 0-1.495-.172-2.069-.513-.574-.341-.99-.84-1.25-1.495l8.378-1.708c.001-1.154-.245-2.16-.737-3.022zM38.64 27.6v-.02c0-1.081.29-1.943.871-2.584.581-.64 1.342-.96 2.285-.96.764 0 1.416.213 1.955.64.54.427.898.989 1.076 1.686l-6.187 1.239zM94.768 24.602a5.113 5.113 0 00-2.001-1.99c-.841-.463-1.776-.695-2.801-.695-1.082 0-2.049.25-2.905.749a5.31 5.31 0 00-2.011 2.085c-.486.892-.729 1.893-.729 3.006 0 1.127.25 2.136.75 3.027a5.266 5.266 0 002.123 2.085c.916.5 1.977.748 3.18.748.945 0 1.792-.157 2.545-.47a4.491 4.491 0 001.847-1.39l-1.354-1.647c-.793.826-1.786 1.24-2.976 1.24-.807 0-1.498-.17-2.072-.513-.575-.342-.993-.84-1.252-1.498l8.394-1.711c0-1.155-.246-2.163-.738-3.026zm-7.962 3.027v-.021c0-1.084.29-1.947.872-2.589.582-.641 1.344-.962 2.288-.962.765 0 1.419.214 1.959.642.54.428.9.991 1.078 1.69l-6.197 1.24zM57.865 23.387a4.038 4.038 0 00-1.544-1.159 5.033 5.033 0 00-1.996-.386c-1.057 0-2.007.244-2.851.73a5.154 5.154 0 00-1.986 2.06c-.48.887-.72 1.91-.72 3.068 0 1.16.239 2.185.72 3.08a5.137 5.137 0 001.986 2.07c.844.486 1.794.73 2.851.73.754 0 1.443-.137 2.068-.408.624-.272 1.15-.679 1.413-1.222v1.604h2.27V17.696h-2.212v5.691h.001zm-.39 6.202a3.115 3.115 0 01-1.173 1.255c-.494.294-1.05.44-1.667.44a3.207 3.207 0 01-1.667-.44 3.115 3.115 0 01-1.173-1.255c-.288-.543-.432-1.173-.432-1.887 0-.715.145-1.344.432-1.888a3.115 3.115 0 011.173-1.255 3.21 3.21 0 011.667-.44c.618 0 1.173.148 1.667.44.493.294.884.711 1.172 1.255.288.544.433 1.173.433 1.887 0 .715-.145 1.345-.433 1.888zM65.163 32.05c.426.515.94.901 1.544 1.16.604.257 1.27.386 1.997.386 1.057 0 2.006-.244 2.85-.73a5.154 5.154 0 001.987-2.06c.48-.887.72-1.91.72-3.069s-.24-2.184-.72-3.078a5.137 5.137 0 00-1.986-2.07c-.845-.488-1.794-.73-2.851-.73-.754 0-1.444.136-2.068.407-.625.271-1.15.679-1.414 1.222V21.82h-2.269v15.923h2.212V32.05h-.002zm.391-6.2a3.116 3.116 0 011.173-1.255 3.2 3.2 0 011.667-.44c.617 0 1.172.147 1.666.44.494.293.885.711 1.173 1.255.288.543.433 1.173.433 1.887 0 .715-.145 1.344-.433 1.888a3.116 3.116 0 01-1.173 1.255 3.21 3.21 0 01-1.666.44 3.206 3.206 0 01-1.667-.44 3.123 3.123 0 01-1.173-1.255c-.288-.544-.432-1.173-.432-1.888 0-.714.144-1.344.432-1.887zM122.431 21.82c3.088 0 5.569 2.688 5.569 5.852 0 3.22-2.481 5.907-5.569 5.907s-5.569-2.688-5.569-5.907c0-3.164 2.481-5.852 5.569-5.852zm0 9.351c1.737 0 3.116-1.568 3.116-3.5 0-1.875-1.379-3.415-3.116-3.415s-3.116 1.54-3.116 3.416c0 1.932 1.379 3.5 3.116 3.5zM76.316 22.766c0-.28.485-.07.765-.07h.814c.197 0 .421.169.478.393l.077.492a4 4 0 013.285-1.629c1.066 0 2.168.267 1.859 1.025l-.483 1.39c-.07.154-.547.309-.674.252-.169-.084-.59-.196-.954-.196a2.962 2.962 0 00-2.527 1.375v7.131c0 .478-.31.534-.758.534h-1.347a.551.551 0 01-.533-.534V22.766h-.002z" fill="#202033"></path><path d="M78.966 22.283h-2.66v11.219h2.66V22.283zM81.951 21.956s1.527-.02 1.874.79l-.925 2.081s-.463-.23-.761-.312l-.188-2.56zM97.472 31.883l.578-1.041c.053-.107.079-.3.079-.3s.284-.016.431.073c0 0 1.23.728 2.6.728.839 0 1.371-.336 1.371-.951 0-.755-.616-1.119-2.154-1.817-1.734-.755-3.188-1.818-3.188-3.663 0-1.398 1.147-3.077 3.831-3.077 1.566 0 2.74.503 3.3.867.252.167.391.53.223.81l-.503.951c-.14.252-.331-.68-.555-.792 0 0-1.041.347-2.465.429-.949.054-1.258.42-1.258.838 0 .728.698 1.036 1.789 1.511 2.041.895 3.72 1.761 3.72 3.858 0 1.734-1.65 3.272-4.139 3.272-1.873 0-3.104-.67-3.69-1.146-.168-.112-.081-.326.03-.55z" fill="#202033"></path><path d="M97.61 32.56l-.485-.33 1.04-1.967s.579.463 1.168.71l-1.724 1.587zM102.214 21.936c1.966.347 2.555 1.14 2.555 1.14l-.936 1.867s-.523-.316-1.041-.578c-.483-.245-1.272-.347-2.198-.231l1.62-2.198zM107.534 31.883l.578-1.041c.053-.107.079-.3.079-.3s.284-.016.431.073c0 0 1.231.728 2.6.728.839 0 1.371-.336 1.371-.951 0-.755-.615-1.119-2.154-1.817-1.733-.755-3.187-1.818-3.187-3.663 0-1.398 1.146-3.077 3.83-3.077 1.566 0 2.74.503 3.3.867.252.167.391.53.223.81l-.503.951c-.14.252-.331-.68-.555-.792 0 0-1.041.347-2.465.429-.949.054-1.258.42-1.258.838 0 .728.699 1.036 1.789 1.511 2.042.895 3.72 1.761 3.72 3.858 0 1.734-1.65 3.272-4.138 3.272-1.874 0-3.105-.67-3.691-1.146-.168-.112-.081-.326.03-.55z" fill="#202033"></path><path d="M107.672 32.56l-.485-.33 1.041-1.967s.578.463 1.167.71l-1.723 1.587zM112.276 21.936c1.966.347 2.555 1.14 2.555 1.14l-.936 1.867s-.523-.316-1.041-.578c-.483-.245-1.272-.347-2.197-.231l1.619-2.198z" fill="#202033"></path></g><defs><clippath id="clip0"><path fill="#fff" d="M0 0h128v37.743H0z"></path></clippath></defs></svg><span class="slogan-text">a shot of dev knowledge</span></a></div><div class="Header__WrapRight-sc-1ddqqjo-1 kIyetI"><a title="educative.io" class="Logo-sc-16vmoep-0 XdIMO"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" width="30px"><path d="M333.33 0H66.67A66.67 66.67 0 000 66.67v266.66A66.67 66.67 0 0066.67 400h266.66A66.67 66.67 0 00400 333.33V66.67A66.67 66.67 0 00333.33 0zm28.57 325.24a36.66 36.66 0 01-36.66 36.66H74.76a36.66 36.66 0 01-36.66-36.66V161.9h323.8zm0-201.43H38.1v-49A36.66 36.66 0 0174.76 38.1h250.48a36.66 36.66 0 0136.66 36.66z" fill="#4951f5"></path><rect x="67.9" y="62.91" width="38.09" height="38.09" rx="2.38" fill="#4951f5"></rect><rect x="125.9" y="62.91" width="38.09" height="38.09" rx="2.38" fill="#4951f5"></rect><rect x="183.9" y="62.91" width="38.09" height="38.09" rx="2.38" fill="#4951f5"></rect><rect x="200" y="295.24" width="114.29" height="38.1" rx="3.33" fill="#4951f5"></rect><path d="M108.91 331.08a3.33 3.33 0 004.71-.21l61.84-67.62a3.35 3.35 0 00.09-4.4l-58.17-69.17a3.32 3.32 0 00-4.69-.4l-20.07 16.88a3.34 3.34 0 00-.41 4.7l39.6 47.14a3.34 3.34 0 01-.09 4.4l-42.37 46.27a3.33 3.33 0 00.21 4.71z" fill="#4951f5"></path></svg></a></div></nav><div class="Page__ShotPageContent-sc-1643uq9-5 cKAmBc"><div class="styles__SocialsPanel-sc-1wnsl1a-8 iaFcrl"><div><span class="MuiTypography-root jss17 jss69 jss15  MuiTypography-overline"><button aria-label="Like this shot" class="styles__CircleButton-sc-1wnsl1a-10 ckNecF"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="styles__LikeIcon-sc-1wnsl1a-14 brKUqA"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path></svg></button></span></div><hr class="styles__Border-sc-1wnsl1a-15 cVvBpJ"><div><span class="MuiTypography-root jss17 jss70 jss15  MuiTypography-overline"><button id="bookmarkPopover" aria-label="bookmark this shot" class="styles__CircleButton-sc-1wnsl1a-10 ckNecF"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="Bookmark__BookmarkStyled-sc-1emlnud-0 hUewMU"><path d="M19 21l-7-5-7 5V5a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2z"></path></svg></button></span></div><div><span class="MuiTypography-root jss17 jss71 jss15  MuiTypography-overline"><button aria-label="give feedback" class="styles__CircleButton-sc-1wnsl1a-10 ckNecF"><span class="b-some-with-icon"><i class="b-some-with-icon-icon"><svg width="25px" height="20px" viewBox="0 0 51 48" version="1.1"><g id="UI" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" stroke-linecap="round"><g transform="translate(-1074.000000, -1165.000000)" id="FeedbackIcon" stroke="#000000"><g transform="translate(1073.000000, 1168.000000)"><g id="volume" stroke-linejoin="round" stroke-width="4.39999962"><path d="M13.0157749,15.0318872 L4.55277274,15.0318872 L4.86586151,28.201542 L11.6223057,28.201542 C13.0368243,28.201542 14.4442324,28.4016234 15.8027079,28.7958405 L45.8658615,37.5198913 L45.942567,5.61428925 L13.8507214,14.9133563 C13.5793752,14.9919828 13.2982831,15.0318872 13.0157749,15.0318872 Z" transform="translate(25.247670, 21.567090) rotate(-18.000000) translate(-25.247670, -21.567090) "></path></g><path d="M22.5,32 L25,42" id="Path-6" stroke-width="5" fill-rule="nonzero"></path></g></g></g></svg></i><span></span></span></button></span></div><div id="socialsPop" class="styles__SocialMediaContainer-sc-1wnsl1a-11 kfNsUW"><span class="MuiTypography-root jss17 jss72 jss15  MuiTypography-overline"><button aria-label="share" class="styles__CircleButton-sc-1wnsl1a-10 ckNecF"><svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="18" cy="5" r="3"></circle><circle cx="6" cy="12" r="3"></circle><circle cx="18" cy="19" r="3"></circle><line x1="8.59" y1="13.51" x2="15.42" y2="17.49"></line><line x1="15.41" y1="6.51" x2="8.59" y2="10.49"></line></svg></button></span><div></div></div></div><h1 class="MuiTypography-root jss17 jss18 jss3 jss1 MuiTypography-h1 MuiTypography-alignLeft">What is Git?</h1><span class="TagsContainer-a1waol-0 jpmvLk"><a style="margin-right:5px" class="ClickableTag-sc-17mpe0s-0 iNQqJf"><span class="MuiTypography-root jss17 jss19 jss14  MuiTypography-caption">git</span></a><a style="margin-right:5px" class="ClickableTag-sc-17mpe0s-0 iNQqJf"><span class="MuiTypography-root jss17 jss20 jss14  MuiTypography-caption">github</span></a><a style="margin-right:5px" class="ClickableTag-sc-17mpe0s-0 iNQqJf"><span class="MuiTypography-root jss17 jss21 jss14  MuiTypography-caption">version</span></a><a style="margin-right:5px" class="ClickableTag-sc-17mpe0s-0 iNQqJf"><span class="MuiTypography-root jss17 jss22 jss14  MuiTypography-caption">control</span></a></span><div class="styles__CompListStyled-sc-1c2fdm2-0 cTuhzI"><div class="styles__ViewerComponentViewStyled-sc-161y6tj-0 jZnCxm"><div><div><div><div><div class=""><div class=""><div class="markdown-container-div Markdown__MarkdownContainerDiv-sc-1j2yuel-5 jeFsGl" height="auto"><div class="markdownViewer Markdown__Viewer-sc-1j2yuel-1 gvyjDX" role="none"><p><strong>Git</strong> is a free, open-source distributed version control system. It keeps track of projects and files as they change over time with the help of different contributors.</p>
+<blockquote>
+<p><strong>Version control</strong> is a system that records changes to a file, or set of files, over time so that you can recall specific versions later.</p>
+</blockquote>
+<p>Git helps keep track of changes made to a code. If at any point during coding you hit a fatal error and don’t know what’s causing it, Git allows you to revert back to a stable state. It also helps you see what changes have been made to the code over time.</p>
+<h2>Repository</h2>
+<p>A repository (commonly referred to as <strong>repo</strong>) is a collection of source code. A repository has commits to the project or a set of references to the commits (i.e., heads).</p>
+<h2>Commits</h2>
+<p>A <strong>commit</strong> logs a change or series of changes that you have made to a file in the repository. A commit has a unique SHA1 hash which is used to keep track of files changed in the past. A series of commits comprises the <strong>Git history</strong>.</p>
+<h2>Branches</h2>
+<p>A branch is essentially a unique set of code changes with a unique name. Each repository can have one or more branches. The main branch — the branch where all the changes eventually get merged into - is called the master. This is the official working version of your project and the one that you will see when you visit the project repository at <a href="http://github.com/yourname/projectname" target="_blank">github.com/yourname/projectname</a>.</p>
+<h2>Working directory, staging area, and local repo</h2>
+<p>Every local repository has three different <strong>virtual zones</strong>. These are:</p>
+<ul>
+<li>Working directory</li>
+<li>staging area</li>
+<li>commit area.</li>
+</ul>
+<p>The <strong>working directory</strong> is where new files are created, old files are deleted, or where changes are made to already existing files.</p>
+<p>Once changes are made, they are added to the staging area. The staging area is also sometimes called the <strong>index</strong>.</p>
+<p>Once the changes are complete​, the staging area will contain one or more files that need to be committed. Creating a commit will cause Git to take the new code from the staging area and make the commit to the main repository​. This commit is then moved to the <strong>commit area</strong>.</p>
+</div></div></div></div></div></div></div></div></div><div class="styles__ViewerComponentViewStyled-sc-161y6tj-0 jZnCxm"><div><div><div><div><div class=""><div class=""><div style="margin-top: 30px; margin-bottom: 30px;"><div style="text-align: center;"><div data-rmiz-wrap="visible"><img src="./What is Git__files/4531039914426368" alt="svg viewer" style="max-width: 100%; height: auto;"><button aria-label="Zoom image" data-rmiz-btn-open="true"></button></div></div></div></div></div></div></div></div></div></div><div class="styles__ViewerComponentViewStyled-sc-161y6tj-0 jZnCxm"><div><div><div><div><div class=""><div class=""><div class="markdown-container-div Markdown__MarkdownContainerDiv-sc-1j2yuel-5 jeFsGl" height="auto"><div class="markdownViewer Markdown__Viewer-sc-1j2yuel-1 gvyjDX" role="none"><h2>Getting started</h2>
+<p>To get started with Git, go to your terminal and run the following command in your project directory. This initializes a project directory.</p>
+<pre class="cm-viewer-markdown disable-cursor" style="background-color: #1e1e1e; border-radius: 0px;"><code class="language-bash vs-dark" data-lang="bash"><span><span class="mtk1">git&nbsp;init&nbsp;</span></span><br></code></pre>
+<p>Run the following command to add files for Git to track. This will add these files to the staging area.</p>
+<pre class="cm-viewer-markdown disable-cursor" style="background-color: #1e1e1e; border-radius: 0px;"><code class="language-bash vs-dark" data-lang="bash"><span><span class="mtk1">git&nbsp;add&nbsp;&lt;filename_one&gt;</span></span><br></code></pre>
+<p>Run the following command to commit your changes to these files.</p>
+<pre class="cm-viewer-markdown disable-cursor" style="background-color: #1e1e1e; border-radius: 0px;"><code class="language-bash vs-dark" data-lang="bash"><span><span class="mtk1">git&nbsp;commit&nbsp;-m&nbsp;"&lt;add&nbsp;a&nbsp;commit&nbsp;message&nbsp;here&gt;"</span></span><br></code></pre>
+<p>We can push our changes through once we’re done.</p>
+<pre class="cm-viewer-markdown disable-cursor" style="background-color: #1e1e1e; border-radius: 0px;"><code class="language-bash vs-dark" data-lang="bash"><span><span class="mtk1">git&nbsp;push</span></span><br></code></pre>
+<p>Making any more changes in the master branch will require these changes to be committed again.</p>
+<hr>
+</div></div></div></div></div></div></div></div></div></div></div><div class="styles__ContributorAttributionWrapper-sc-1wnsl1a-16 gmwWPT"><div class="Licensing__EdpressoLicensing-sc-1hljm7x-4 bbgVhx"><div></div></div><div id="shot-license" class="Licensing__EdpressoLicense-sc-1hljm7x-3 joRdJs">License: <a target="_blank" rel="noopener noreferrer" href="https://creativecommons.org/licenses/by-sa/4.0/" class="A-sc-138l9ak-0 Licensing__AttributionLink-sc-1hljm7x-8 Licensing__LicenseLink-sc-1hljm7x-9 UCnpl">Creative Commons -Attribution -ShareAlike 4.0 (CC-BY-SA 4.0)</a></div></div><div class="styles__Wrapper-sc-1wnsl1a-6 cvpBPs"><div></div><div></div></div><div style="display:flex" class="Footer-sc-1wva2da-0 imaHmA"><div class="Footer__FullBg-sc-1wva2da-1 jklzPk"><div class="Footer__Body-sc-1wva2da-2 lduFNK"><div class="Footer__Col1-sc-1wva2da-3 bvUNwo"><div class="Footer__LogoContainer-sc-1wva2da-5 boyMws"><a aria-label="educative.io" class="Footer__Logo-sc-1wva2da-7 dBuCRr"><svg width="170px" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1138.66 222"><path d="M179.67 8H42.34A34.33 34.33 0 008 42.33v137.34A34.33 34.33 0 0042.34 214h137.33A34.33 34.33 0 00214 179.67V42.33A34.33 34.33 0 00179.67 8zm14.71 167.5a18.88 18.88 0 01-18.88 18.88h-129a18.88 18.88 0 01-18.88-18.88V91.38h166.76zm0-103.74H27.62V46.5A18.88 18.88 0 0146.5 27.62h129a18.88 18.88 0 0118.88 18.88z" fill="#4951f5"></path><rect x="42.97" y="40.4" width="19.62" height="19.62" rx="1.23" fill="#4951f5"></rect><rect x="72.84" y="40.4" width="19.62" height="19.62" rx="1.23" fill="#4951f5"></rect><rect x="102.71" y="40.4" width="19.62" height="19.62" rx="1.23" fill="#4951f5"></rect><rect x="111" y="160.05" width="58.86" height="19.62" rx="1.72" fill="#4951f5"></rect><path d="M64.09 178.51a1.72 1.72 0 002.43-.11l31.84-34.83a1.72 1.72 0 000-2.26l-30-35.62a1.7 1.7 0 00-2.41-.21l-10.25 8.69a1.71 1.71 0 00-.21 2.42l20.4 24.26a1.72 1.72 0 010 2.26L54 167a1.72 1.72 0 00.11 2.43z" fill="#4951f5"></path><path d="M358.38 101.61a44.19 44.19 0 00-17.27-17.17 51.76 51.76 0 00-49.23.46 45.68 45.68 0 00-17.35 18 53.25 53.25 0 00-6.29 25.94A52.5 52.5 0 00274.7 155a45.51 45.51 0 0018.3 18q11.87 6.47 27.45 6.46a56.55 56.55 0 0022-4.06 38.84 38.84 0 0015.94-12l-11.69-14.21q-10.28 10.69-25.68 10.7-10.45 0-17.89-4.43a25.47 25.47 0 01-10.8-12.92l72.43-14.77q-.01-14.99-6.38-26.16zm-68.71 26.12v-.18q0-14 7.52-22.34t19.75-8.31a26.07 26.07 0 0126.21 20.1zM455.89 91.55a34.9 34.9 0 00-13.35-10 43.69 43.69 0 00-17.26-3.34 48.52 48.52 0 00-24.65 6.31 44.56 44.56 0 00-17.17 17.81q-6.24 11.5-6.23 26.53t6.23 26.62a44.36 44.36 0 0017.17 17.9 48.42 48.42 0 0024.65 6.31 44.34 44.34 0 0017.88-3.53c5.4-2.35 9.94-5.87 12.22-10.57v13.87H475V42.33h-19.11zm-3.39 53.61A27 27 0 01442.36 156a29.24 29.24 0 01-28.83 0 27 27 0 01-10.14-10.86 34.35 34.35 0 01-3.74-16.32 34.42 34.42 0 013.74-16.33 27.06 27.06 0 0110.14-10.85 29.24 29.24 0 0128.83 0 27.06 27.06 0 0110.14 10.85 34.3 34.3 0 013.74 16.33 34.23 34.23 0 01-3.74 16.34zM564.4 129.39c0 12.76-3.9 17-8.59 22.17s-11 7.7-18.95 7.7q-10.68 0-16.46-6.58c-3.86-4.39-5.19-11-5.19-20V78.37h-19.34v57.52q0 21.71 10.95 32.74c7.29 7.36 13.78 11 26.48 11a41.46 41.46 0 0017.26-3.62 37.15 37.15 0 0013.84-10.3v13.62H584v-101h-19.6zM652.63 97.58a26 26 0 0113.13 3.42 27.42 27.42 0 0110 10.31l16.69-10.4a37.61 37.61 0 00-15.56-17.09q-10.35-5.94-24.08-5.94a51.54 51.54 0 00-26 6.5 46.45 46.45 0 00-17.82 18 55.57 55.57 0 000 52.46A46.14 46.14 0 00626.9 173a51.65 51.65 0 0025.91 6.49 46.56 46.56 0 0023.9-6 39.09 39.09 0 0015.74-17.18l-16.69-10.4a27.35 27.35 0 01-10 10.31 26 26 0 01-13.13 3.44q-12.35 0-20.25-8.45t-7.92-22.57q0-14.1 8-22.56a26.61 26.61 0 0120.17-8.5zM852.87 160.56q-6.24 0-9.7-3.8a19.08 19.08 0 01-4.46-11c-.06-3.46 0-47.68 0-47.68L863.2 98l.09-19.52h-24.53V58.72h-19.62v19.75h-14.69V98h14.69v48.47q0 16.32 8.55 24.86c5.69 5.69 12.07 8.28 22.51 8.28A41.3 41.3 0 00862 178a26 26 0 009.52-5l-6.22-16.51a19 19 0 01-12.43 4.07zM891.83 78.4h19.18v101.07h-19.18zM979.29 154.07l-29.54-75.66h-21.72l39.64 101.06h22.65l40.76-101.06h-21.36l-30.43 75.66zM1086.7 160q-10.5 0-18-4.45a25.63 25.63 0 01-10.86-13l72.79-14.85q0-15-6.41-26.24a44.35 44.35 0 00-17.35-17.26 49.6 49.6 0 00-24.29-6 49 49 0 00-25.18 6.5 46 46 0 00-17.4 18.07c-4.21 7.74-7.4 16.42-7.4 26.07s3.25 18.52 7.58 26.25a45.62 45.62 0 0018.42 18.08q11.91 6.5 27.58 6.5a56.89 56.89 0 0022.07-4.08 38.88 38.88 0 0016-12.06l-11.74-14.29Q1102.19 160 1086.7 160zm-31.49-32.46q0-14.1 7.56-22.45t19.84-8.34A26.19 26.19 0 011109 117l-53.74 10.75zM891.77 39.21h19.57v19.43h-19.57zM780.92 85.73c-7.38-5-14.91-7.88-27.89-7.88-20.46 0-34 5.45-40.36 16.22l19 8.94c2.72-5.41 9.36-8 20.39-8 6.94 0 12 .89 15 2.67 2.85 1.68 4.6 3.76 5.19 6.19s-.07 6.55 0 12h-5.22c-40.81 0-61.5 11.73-61.5 34.85a25.77 25.77 0 0010.23 21c6.67 5.32 15.24 8 25.47 8 12.62 0 23.39-3.15 32.07-9.36v9l19 .27v-64.2c.1-14.56-3.76-24.56-11.38-29.7zm-7.57 64.46A29.92 29.92 0 01762 159a37.31 37.31 0 01-15.67 3.48c-5.78 0-10.38-1.15-13.67-3.42a10.44 10.44 0 01-4.63-9.23c0-11.61 12-17.49 35.68-17.49h9.69z" fill="#202033"></path></svg></a><p class="MuiTypography-root jss17 jss23 jss10  MuiTypography-body1">Level up your coding skills, quickly and efficiently.</p><div class="Footer__Social-sc-1wva2da-11 dxDHHb"><a target="_blank" rel="noopener noreferrer" aria-label="Facebook" href="https://facebook.com/educativeinc" class="Link-sc-1sc3ctk-0 Footer__FooterLink-sc-1wva2da-10 gNhCWQ"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path></svg></a><a target="_blank" rel="noopener noreferrer" aria-label="Linkedin" href="https://linkedin.com/company/educative-inc" class="Link-sc-1sc3ctk-0 Footer__FooterLink-sc-1wva2da-10 gNhCWQ"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path><rect x="2" y="9" width="4" height="12"></rect><circle cx="4" cy="4" r="2"></circle></svg></a><a target="_blank" rel="noopener noreferrer" aria-label="Twitter" href="https://twitter.com/educativeinc" class="Link-sc-1sc3ctk-0 Footer__FooterLink-sc-1wva2da-10 gNhCWQ"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z"></path></svg></a></div></div><div class="Footer__CopyrightContainer-sc-1wva2da-6 lmgaYZ"><span class="MuiTypography-root jss17 jss24 jss14  MuiTypography-caption">Copyright ©<!-- -->2020<!-- --> Educative, Inc. All rights reserved.<img src="./What is Git__files/soc2Blue.png" alt="soc2" class="Footer__Soc2-sc-1wva2da-8 elvgCb"></span></div></div><div class="Footer__Col2-sc-1wva2da-4 bpcrnq"><div class="Footer__List-sc-1wva2da-9 fosydy"><span class="MuiTypography-root jss17 jss25 jss15  MuiTypography-overline">LEARN</span><a href="https://www.educative.io/explore" class="Link-sc-1sc3ctk-0 Footer__FooterLink-sc-1wva2da-10 gNhCWQ"><p class="MuiTypography-root jss17 jss26 jss9  MuiTypography-body1">Courses</p></a><a href="https://www.educative.io/explore/early-access" class="Link-sc-1sc3ctk-0 Footer__FooterLink-sc-1wva2da-10 gNhCWQ"><p class="MuiTypography-root jss17 jss27 jss9  MuiTypography-body1">Early Access Courses</p></a><a target="_blank" rel="noopener noreferrer" href="https://www.educative.io/edpresso" class="Link-sc-1sc3ctk-0 Footer__FooterLink-sc-1wva2da-10 gNhCWQ"><p class="MuiTypography-root jss17 jss28 jss9  MuiTypography-body1">Edpresso</p></a><a target="_blank" rel="noopener noreferrer" href="https://www.educative.io/blog" class="Link-sc-1sc3ctk-0 Footer__FooterLink-sc-1wva2da-10 gNhCWQ"><p class="MuiTypography-root jss17 jss29 jss9  MuiTypography-body1">Blog</p></a><a href="https://www.educative.io/unlimited" class="Link-sc-1sc3ctk-0 Footer__FooterLink-sc-1wva2da-10 gNhCWQ"><p class="MuiTypography-root jss17 jss30 jss9  MuiTypography-body1">Subscriptions</p></a><a href="https://www.educative.io/business" class="Link-sc-1sc3ctk-0 Footer__FooterLink-sc-1wva2da-10 gNhCWQ"><p class="MuiTypography-root jss17 jss31 jss9  MuiTypography-body1">For Teams</p></a><a target="_blank" rel="noopener noreferrer" href="https://codinginterview.com/" class="Link-sc-1sc3ctk-0 Footer__FooterLink-sc-1wva2da-10 gNhCWQ"><p class="MuiTypography-root jss17 jss32 jss9  MuiTypography-body1">CodingInterview.com</p></a></div><div class="Footer__List-sc-1wva2da-9 fosydy"><span class="MuiTypography-root jss17 jss33 jss15  MuiTypography-overline">SCHOLARSHIPS</span><a href="https://www.educative.io/github-students" class="Link-sc-1sc3ctk-0 Footer__FooterLink-sc-1wva2da-10 gNhCWQ"><p class="MuiTypography-root jss17 jss34 jss9  MuiTypography-body1">For Students</p></a><a href="https://www.educative.io/github-educators" class="Link-sc-1sc3ctk-0 Footer__FooterLink-sc-1wva2da-10 gNhCWQ"><p class="MuiTypography-root jss17 jss35 jss9  MuiTypography-body1">For Educators</p></a><a href="https://www.educative.io/covid-scholarship" class="Link-sc-1sc3ctk-0 Footer__FooterLink-sc-1wva2da-10 gNhCWQ"><p class="MuiTypography-root jss17 jss36 jss9  MuiTypography-body1">COVID Scholarship</p></a></div><div class="Footer__List-sc-1wva2da-9 fosydy"><span class="MuiTypography-root jss17 jss37 jss15  MuiTypography-overline">CONTRIBUTE</span><a href="https://www.educative.io/authors" class="Link-sc-1sc3ctk-0 Footer__FooterLink-sc-1wva2da-10 gNhCWQ"><p class="MuiTypography-root jss17 jss38 jss9  MuiTypography-body1">Become An Author</p></a><a href="https://www.educative.io/published-authors" class="Link-sc-1sc3ctk-0 Footer__FooterLink-sc-1wva2da-10 gNhCWQ"><p class="MuiTypography-root jss17 jss39 jss9  MuiTypography-body1">Published Authors</p></a><a href="https://www.educative.io/affiliate" class="Link-sc-1sc3ctk-0 Footer__FooterLink-sc-1wva2da-10 gNhCWQ"><p class="MuiTypography-root jss17 jss40 jss9  MuiTypography-body1">Become An Affiliate</p></a></div><div class="Footer__List-sc-1wva2da-9 fosydy"><span class="MuiTypography-root jss17 jss41 jss15  MuiTypography-overline">LEGAL</span><a href="https://www.educative.io/privacy" class="Link-sc-1sc3ctk-0 Footer__FooterLink-sc-1wva2da-10 gNhCWQ"><p class="MuiTypography-root jss17 jss42 jss9  MuiTypography-body1">Privacy Policy</p></a><a href="https://www.educative.io/terms" class="Link-sc-1sc3ctk-0 Footer__FooterLink-sc-1wva2da-10 gNhCWQ"><p class="MuiTypography-root jss17 jss43 jss9  MuiTypography-body1">Terms of Service</p></a><a href="https://www.educative.io/enterprise-terms" class="Link-sc-1sc3ctk-0 Footer__FooterLink-sc-1wva2da-10 gNhCWQ"><p class="MuiTypography-root jss17 jss44 jss9  MuiTypography-body1">Enterprise Terms of Service</p></a></div><div class="Footer__List-sc-1wva2da-9 fosydy"><span class="MuiTypography-root jss17 jss45 jss15  MuiTypography-overline">MORE</span><a href="https://www.educative.io/team" class="Link-sc-1sc3ctk-0 Footer__FooterLink-sc-1wva2da-10 gNhCWQ"><p class="MuiTypography-root jss17 jss46 jss9  MuiTypography-body1">Team</p></a><a target="_blank" rel="noopener noreferrer" href="https://angel.co/educativeinc/jobs" class="Link-sc-1sc3ctk-0 Footer__FooterLink-sc-1wva2da-10 gNhCWQ"><p class="MuiTypography-root jss17 jss47 jss9  MuiTypography-body1">Careers</p></a><a href="https://try.educative.io/bootcamps" class="Link-sc-1sc3ctk-0 Footer__FooterLink-sc-1wva2da-10 gNhCWQ"><p class="MuiTypography-root jss17 jss48 jss9  MuiTypography-body1">For Bootcamps</p></a><a href="https://www.educative.io/blog/enterprise" class="Link-sc-1sc3ctk-0 Footer__FooterLink-sc-1wva2da-10 gNhCWQ"><p class="MuiTypography-root jss17 jss49 jss9  MuiTypography-body1">Blog for Business</p></a><a href="https://www.educative.io/quality" class="Link-sc-1sc3ctk-0 Footer__FooterLink-sc-1wva2da-10 gNhCWQ"><p class="MuiTypography-root jss17 jss50 jss9  MuiTypography-body1">Quality Commitment</p></a><a href="https://www.educative.io/courses/educative-faq" class="Link-sc-1sc3ctk-0 Footer__FooterLink-sc-1wva2da-10 gNhCWQ"><p class="MuiTypography-root jss17 jss51 jss9  MuiTypography-body1">FAQ</p></a><a href="https://www.educative.io/contactUs" class="Link-sc-1sc3ctk-0 Footer__FooterLink-sc-1wva2da-10 gNhCWQ"><p class="MuiTypography-root jss17 jss52 jss9  MuiTypography-body1">Contact Us</p></a></div><div class="jss63"><div class="Footer__List-sc-1wva2da-9 fosydy"><span class="MuiTypography-root jss17 jss68 jss15  MuiTypography-overline">SOCIAL</span><div class="Footer__Social-sc-1wva2da-11 dxDHHb"><a target="_blank" rel="noopener noreferrer" aria-label="Facebook" href="https://facebook.com/educativeinc" class="Link-sc-1sc3ctk-0 Footer__FooterLink-sc-1wva2da-10 gNhCWQ"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path></svg></a><a target="_blank" rel="noopener noreferrer" aria-label="Linkedin" href="https://linkedin.com/company/educative-inc" class="Link-sc-1sc3ctk-0 Footer__FooterLink-sc-1wva2da-10 gNhCWQ"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path><rect x="2" y="9" width="4" height="12"></rect><circle cx="4" cy="4" r="2"></circle></svg></a><a target="_blank" rel="noopener noreferrer" aria-label="Twitter" href="https://twitter.com/educativeinc" class="Link-sc-1sc3ctk-0 Footer__FooterLink-sc-1wva2da-10 gNhCWQ"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z"></path></svg></a></div></div></div></div></div></div></div></div></div></div></div></div></div></div><script id="__NEXT_DATA__" type="application/json">{"props":{"pageProps":{"content":{"shotId":"5531683819356160","title":"What is Git?","tags":"git,github,version,control","content":[{"type":"MarkdownEditor","mode":"edit","content":{"version":"2.0","text":"**Git** is a free, open-source distributed version control system. It keeps track of projects and files as they change over time with the help of different contributors.\n\n\u003e **Version control** is a system that records changes to a file, or set of files, over time so that you can recall specific versions later.\n\nGit helps keep track of changes made to a code. If at any point during coding you hit a fatal error and don’t know what’s causing it, Git allows you to revert back to a stable state. It also helps you see what changes have been made to the code over time.\n\n## Repository\nA repository (commonly referred to as **repo**) is a collection of source code. A repository has commits to the project or a set of references to the commits (i.e., heads).\n\n## Commits\nA **commit** logs a change or series of changes that you have made to a file in the repository. A commit has a unique SHA1 hash which is used to keep track of files changed in the past. A series of commits comprises the **Git history**.\n\n## Branches\nA branch is essentially a unique set of code changes with a unique name. Each repository can have one or more branches. The main branch — the branch where all the changes eventually get merged into - is called the master. This is the official working version of your project and the one that you will see when you visit the project repository at github.com/yourname/projectname.\n\n## Working directory, staging area, and local repo\nEvery local repository has three different **virtual zones**. These are: \n- Working directory \n- staging area\n- commit area. \n\nThe **working directory** is where new files are created, old files are deleted, or where changes are made to already existing files. \n\nOnce changes are made, they are added to the staging area. The staging area is also sometimes called the **index**. \n\nOnce the changes are complete​, the staging area will contain one or more files that need to be committed. Creating a commit will cause Git to take the new code from the staging area and make the commit to the main repository​. This commit is then moved to the **commit area**. \n\n","mdHtml":"\u003cp\u003e\u003cstrong\u003eGit\u003c/strong\u003e is a free, open-source distributed version control system. It keeps track of projects and files as they change over time with the help of different contributors.\u003c/p\u003e\n\u003cblockquote\u003e\n\u003cp\u003e\u003cstrong\u003eVersion control\u003c/strong\u003e is a system that records changes to a file, or set of files, over time so that you can recall specific versions later.\u003c/p\u003e\n\u003c/blockquote\u003e\n\u003cp\u003eGit helps keep track of changes made to a code. If at any point during coding you hit a fatal error and don’t know what’s causing it, Git allows you to revert back to a stable state. It also helps you see what changes have been made to the code over time.\u003c/p\u003e\n\u003ch2\u003eRepository\u003c/h2\u003e\n\u003cp\u003eA repository (commonly referred to as \u003cstrong\u003erepo\u003c/strong\u003e) is a collection of source code. A repository has commits to the project or a set of references to the commits (i.e., heads).\u003c/p\u003e\n\u003ch2\u003eCommits\u003c/h2\u003e\n\u003cp\u003eA \u003cstrong\u003ecommit\u003c/strong\u003e logs a change or series of changes that you have made to a file in the repository. A commit has a unique SHA1 hash which is used to keep track of files changed in the past. A series of commits comprises the \u003cstrong\u003eGit history\u003c/strong\u003e.\u003c/p\u003e\n\u003ch2\u003eBranches\u003c/h2\u003e\n\u003cp\u003eA branch is essentially a unique set of code changes with a unique name. Each repository can have one or more branches. The main branch — the branch where all the changes eventually get merged into - is called the master. This is the official working version of your project and the one that you will see when you visit the project repository at \u003ca href=\"http://github.com/yourname/projectname\"\u003egithub.com/yourname/projectname\u003c/a\u003e.\u003c/p\u003e\n\u003ch2\u003eWorking directory, staging area, and local repo\u003c/h2\u003e\n\u003cp\u003eEvery local repository has three different \u003cstrong\u003evirtual zones\u003c/strong\u003e. These are:\u003c/p\u003e\n\u003cul\u003e\n\u003cli\u003eWorking directory\u003c/li\u003e\n\u003cli\u003estaging area\u003c/li\u003e\n\u003cli\u003ecommit area.\u003c/li\u003e\n\u003c/ul\u003e\n\u003cp\u003eThe \u003cstrong\u003eworking directory\u003c/strong\u003e is where new files are created, old files are deleted, or where changes are made to already existing files.\u003c/p\u003e\n\u003cp\u003eOnce changes are made, they are added to the staging area. The staging area is also sometimes called the \u003cstrong\u003eindex\u003c/strong\u003e.\u003c/p\u003e\n\u003cp\u003eOnce the changes are complete​, the staging area will contain one or more files that need to be committed. Creating a commit will cause Git to take the new code from the staging area and make the commit to the main repository​. This commit is then moved to the \u003cstrong\u003ecommit area\u003c/strong\u003e.\u003c/p\u003e\n","cursorPosition":{"line":0,"ch":0},"comp_id":"f429ae69-1a0b-40c8-b8b5-592727ffd91a"},"hash":"1","iteration":0},{"type":"MxGraphWidget","mode":"view","content":{"prevXml":"\u003cmxGraphModel\u003e\u003croot\u003e\u003cmxCell id=\"0\"/\u003e\u003cmxCell id=\"1\" parent=\"0\"/\u003e\u003cmxCell id=\"988\" value=\"\" style=\"image;html=1;labelBackgroundColor=#ffffff;image=stencils/edpresso/tall peach.min.svg;direction=south;\" parent=\"1\" vertex=\"1\"\u003e\u003cmxGeometry x=\"150\" y=\"10\" width=\"170\" height=\"110\" as=\"geometry\"/\u003e\u003c/mxCell\u003e\u003cmxCell id=\"2764\" value=\"\" style=\"image;html=1;labelBackgroundColor=#ffffff;image=stencils/edpresso/tall orange.min.svg;direction=south;\" parent=\"1\" vertex=\"1\"\u003e\u003cmxGeometry x=\"152\" y=\"120\" width=\"170\" height=\"130\" as=\"geometry\"/\u003e\u003c/mxCell\u003e\u003cmxCell id=\"8627\" value=\"\" style=\"image;html=1;labelBackgroundColor=#ffffff;image=stencils/edpresso/tall green.min.svg;direction=south;\" parent=\"1\" vertex=\"1\"\u003e\u003cmxGeometry x=\"150\" y=\"245\" width=\"170\" height=\"130\" as=\"geometry\"/\u003e\u003c/mxCell\u003e\u003cmxCell id=\"4743\" value=\"\u0026lt;font face=\u0026quot;Verdana\u0026quot; style=\u0026quot;font-size: 17px\u0026quot;\u0026gt;Working\u0026amp;nbsp;\u0026lt;/font\u0026gt;\u0026lt;div\u0026gt;\u0026lt;font face=\u0026quot;Verdana\u0026quot; style=\u0026quot;font-size: 17px\u0026quot;\u0026gt;Directory\u0026lt;/font\u0026gt;\u0026lt;/div\u0026gt;\" style=\"text;html=1;resizable=0;points=[];autosize=1;align=left;verticalAlign=top;spacingTop=-4;\" parent=\"1\" vertex=\"1\"\u003e\u003cmxGeometry x=\"198\" y=\"47\" width=\"90\" height=\"30\" as=\"geometry\"/\u003e\u003c/mxCell\u003e\u003cmxCell id=\"1942\" value=\"\u0026lt;font face=\u0026quot;Verdana\u0026quot; style=\u0026quot;font-size: 17px\u0026quot;\u0026gt;Staging\u0026amp;nbsp;\u0026lt;/font\u0026gt;\u0026lt;div\u0026gt;\u0026lt;font face=\u0026quot;Verdana\u0026quot; size=\u0026quot;4\u0026quot;\u0026gt;Area\u0026lt;/font\u0026gt;\u0026lt;/div\u0026gt;\" style=\"text;html=1;resizable=0;points=[];autosize=1;align=left;verticalAlign=top;spacingTop=-4;\" parent=\"1\" vertex=\"1\"\u003e\u003cmxGeometry x=\"206\" y=\"166\" width=\"90\" height=\"30\" as=\"geometry\"/\u003e\u003c/mxCell\u003e\u003cmxCell id=\"4613\" value=\"\u0026lt;font face=\u0026quot;Verdana\u0026quot;\u0026gt;\u0026lt;span style=\u0026quot;font-size: 17px\u0026quot;\u0026gt;Repository\u0026lt;/span\u0026gt;\u0026lt;/font\u0026gt;\" style=\"text;html=1;resizable=0;points=[];autosize=1;align=left;verticalAlign=top;spacingTop=-4;\" parent=\"1\" vertex=\"1\"\u003e\u003cmxGeometry x=\"190\" y=\"300\" width=\"110\" height=\"20\" as=\"geometry\"/\u003e\u003c/mxCell\u003e\u003cmxCell id=\"1940\" value=\"\" style=\"image;html=1;labelBackgroundColor=#ffffff;image=stencils/edpresso/arrow short 2.svg;rotation=90;\" parent=\"1\" vertex=\"1\"\u003e\u003cmxGeometry x=\"213\" y=\"95\" width=\"45\" height=\"60\" as=\"geometry\"/\u003e\u003c/mxCell\u003e\u003cmxCell id=\"1677\" value=\"\" style=\"image;html=1;labelBackgroundColor=#ffffff;image=stencils/edpresso/arrow short 2.svg;rotation=90;\" parent=\"1\" vertex=\"1\"\u003e\u003cmxGeometry x=\"213\" y=\"220\" width=\"45\" height=\"60\" as=\"geometry\"/\u003e\u003c/mxCell\u003e\u003c/root\u003e\u003c/mxGraphModel\u003e","svg":"","path":"/api/edpresso/shot/5531683819356160/image/4531039914426368","caption":"","comp_id":"1dfde828-f652-49c5-9779-c5f86b34cd2f","waInstantlyOpened":true,"prevSvg":"","xml":"\u003cmxGraphModel\u003e\u003croot\u003e\u003cmxCell id=\"0\"/\u003e\u003cmxCell id=\"1\" parent=\"0\"/\u003e\u003cmxCell id=\"988\" value=\"\" style=\"image;html=1;labelBackgroundColor=#ffffff;image=stencils/edpresso/tall peach.min.svg;direction=south;\" parent=\"1\" vertex=\"1\"\u003e\u003cmxGeometry x=\"150\" y=\"10\" width=\"170\" height=\"110\" as=\"geometry\"/\u003e\u003c/mxCell\u003e\u003cmxCell id=\"2764\" value=\"\" style=\"image;html=1;labelBackgroundColor=#ffffff;image=stencils/edpresso/tall orange.min.svg;direction=south;\" parent=\"1\" vertex=\"1\"\u003e\u003cmxGeometry x=\"152\" y=\"120\" width=\"170\" height=\"130\" as=\"geometry\"/\u003e\u003c/mxCell\u003e\u003cmxCell id=\"8627\" value=\"\" style=\"image;html=1;labelBackgroundColor=#ffffff;image=stencils/edpresso/tall green.min.svg;direction=south;\" parent=\"1\" vertex=\"1\"\u003e\u003cmxGeometry x=\"150\" y=\"245\" width=\"170\" height=\"130\" as=\"geometry\"/\u003e\u003c/mxCell\u003e\u003cmxCell id=\"4743\" value=\"\u0026lt;font face=\u0026quot;Verdana\u0026quot; style=\u0026quot;font-size: 17px\u0026quot;\u0026gt;Working\u0026amp;nbsp;\u0026lt;/font\u0026gt;\u0026lt;div\u0026gt;\u0026lt;font face=\u0026quot;Verdana\u0026quot; style=\u0026quot;font-size: 17px\u0026quot;\u0026gt;Directory\u0026lt;/font\u0026gt;\u0026lt;/div\u0026gt;\" style=\"text;html=1;resizable=0;points=[];autosize=1;align=left;verticalAlign=top;spacingTop=-4;\" parent=\"1\" vertex=\"1\"\u003e\u003cmxGeometry x=\"198\" y=\"47\" width=\"90\" height=\"30\" as=\"geometry\"/\u003e\u003c/mxCell\u003e\u003cmxCell id=\"1942\" value=\"\u0026lt;font face=\u0026quot;Verdana\u0026quot; style=\u0026quot;font-size: 17px\u0026quot;\u0026gt;Staging\u0026amp;nbsp;\u0026lt;/font\u0026gt;\u0026lt;div\u0026gt;\u0026lt;font face=\u0026quot;Verdana\u0026quot; size=\u0026quot;4\u0026quot;\u0026gt;Area\u0026lt;/font\u0026gt;\u0026lt;/div\u0026gt;\" style=\"text;html=1;resizable=0;points=[];autosize=1;align=center;verticalAlign=top;spacingTop=-4;\" parent=\"1\" vertex=\"1\"\u003e\u003cmxGeometry x=\"196\" y=\"167\" width=\"90\" height=\"30\" as=\"geometry\"/\u003e\u003c/mxCell\u003e\u003cmxCell id=\"4613\" value=\"\u0026lt;font face=\u0026quot;Verdana\u0026quot;\u0026gt;\u0026lt;span style=\u0026quot;font-size: 17px\u0026quot;\u0026gt;Repository\u0026lt;/span\u0026gt;\u0026lt;/font\u0026gt;\" style=\"text;html=1;resizable=0;points=[];autosize=1;align=left;verticalAlign=top;spacingTop=-4;\" parent=\"1\" vertex=\"1\"\u003e\u003cmxGeometry x=\"190\" y=\"300\" width=\"110\" height=\"20\" as=\"geometry\"/\u003e\u003c/mxCell\u003e\u003cmxCell id=\"1940\" value=\"\" style=\"image;html=1;labelBackgroundColor=#ffffff;image=stencils/edpresso/arrow short 2.svg;rotation=90;\" parent=\"1\" vertex=\"1\"\u003e\u003cmxGeometry x=\"213\" y=\"95\" width=\"45\" height=\"60\" as=\"geometry\"/\u003e\u003c/mxCell\u003e\u003cmxCell id=\"1677\" value=\"\" style=\"image;html=1;labelBackgroundColor=#ffffff;image=stencils/edpresso/arrow short 2.svg;rotation=90;\" parent=\"1\" vertex=\"1\"\u003e\u003cmxGeometry x=\"213\" y=\"220\" width=\"45\" height=\"60\" as=\"geometry\"/\u003e\u003c/mxCell\u003e\u003c/root\u003e\u003c/mxGraphModel\u003e","prevPath":"/api/edpresso/shot/5531683819356160/image/6368474101186560"},"hash":"2","iteration":0},{"type":"MarkdownEditor","mode":"view","content":{"version":"2.0","text":"## Getting started\nTo get started with Git, go to your terminal and run the following command in your project directory. This initializes a project directory.\n```bash\ngit init \n```\nRun the following command to add files for Git to track. This will add these files to the staging area.\n```bash\ngit add \u003cfilename_one\u003e\n```\nRun the following command to commit your changes to these files.\n```bash\ngit commit -m \"\u003cadd a commit message here\u003e\"\n```\nWe can push our changes through once we're done. \n```bash\ngit push\n```\nMaking any more changes in the master branch will require these changes to be committed again.\n\n---\n\n","mdHtml":"\u003ch2\u003eGetting started\u003c/h2\u003e\n\u003cp\u003eTo get started with Git, go to your terminal and run the following command in your project directory. This initializes a project directory.\u003c/p\u003e\n\u003cpre\u003e\u003ccode class=\"language-bash\"\u003egit init \n\u003c/code\u003e\u003c/pre\u003e\n\u003cp\u003eRun the following command to add files for Git to track. This will add these files to the staging area.\u003c/p\u003e\n\u003cpre\u003e\u003ccode class=\"language-bash\"\u003egit add \u0026lt;filename_one\u0026gt;\n\u003c/code\u003e\u003c/pre\u003e\n\u003cp\u003eRun the following command to commit your changes to these files.\u003c/p\u003e\n\u003cpre\u003e\u003ccode class=\"language-bash\"\u003egit commit -m \u0026quot;\u0026lt;add a commit message here\u0026gt;\u0026quot;\n\u003c/code\u003e\u003c/pre\u003e\n\u003cp\u003eWe can push our changes through once we’re done.\u003c/p\u003e\n\u003cpre\u003e\u003ccode class=\"language-bash\"\u003egit push\n\u003c/code\u003e\u003c/pre\u003e\n\u003cp\u003eMaking any more changes in the master branch will require these changes to be committed again.\u003c/p\u003e\n\u003chr /\u003e\n","cursorPosition":{"line":0,"ch":0},"comp_id":"444a0dee-cb09-4cf7-89cc-c22aa7b3c87c"},"hash":"3","iteration":0}],"url":"what-is-git","docker":{"jobs":[],"version":3,"loaded":true,"container":{"imageName":"","buildStatusUrl":"","buildLogUrl":"","file":{}},"envs":[]},"canonical_url":""},"creatorId":6547532599525376,"creatorName":"Edpresso Editor","creatorImageUrl":"https://lh3.googleusercontent.com/hA0R-5iFPC7dGWqtu4plTakMMNlPqxiw7abRvs7B2XU8r37CUISPZG7n8MgCv56BUXh3LBgLEw13e8ZVABsIUbOD2qYmXA","attributions":[],"publishDate":"2020-02-28T17:09:23.518Z","modifiedDate":"2020-02-28T17:09:23.518Z"},"__N_SSP":true},"page":"/edpresso/[shotUrl]","query":{"shotUrl":"what-is-git"},"buildId":"200813-1142-059768d","isFallback":false,"dynamicIds":["wHSu","+EWW","/W95","/ab8","0T/a","1077","14Ie","2jw7","5foh","6DQo","8+AD","8v5W","9Wj7","ACkF","AYVP","BGzO","D4ny","EDr4","Ev2A","G492","IzWC","JBiz","JpU4","KTbD","LR/J","LqFA","McIs","NA7k","OtwA","Q8jq","QLaP","QrtA","SqZg","TSYQ","UOkd","UXZV","XY+j","aput","b4pn","bh8V","c7wz","cQhG","d3Kl","djPm","ewAR","fZVS","ga9N","ge64","hi2O","i6sE","j36g","jOCL","kOwS","mlGW","nkTw","p9MR","pH/F","pLtp","pasi","pvIh","qBJy","r36L","tFdt","uwnE","vCXk","wWUK","yLpj","z/Nn","7tlc","FfBw","j/1Z","1Ua+","7rlJ","W3D4","Wm40","YG7K","neBe","+QRC","/THI","0e8D","3Epe","B1tb","CjAr","E9nw","IP2g","IhV8","MCbV","NC75","PDX0","SWXX","StAi","SuWi","SvKN","VRBI","ZwUw","aQzX","gjeX","h2yo","ihVS","jt9Z","kzvQ","o5PN","t99M","ukoL","uobL","vIBk","zEHM","8SmY","+6XX","+9Uq","/ab2","/wxW","0XuU","0px3","0xIW","11rz","1CSz","1IWx","2ScO","2j6C","2wwy","3BRs","3Ju6","43KI","47Jv","49sm","4Hv8","594e","5Kld","5maX","6F8h","75pU","7pNB","8UCk","8Vlj","9+Sh","9XZ3","AUX7","AYSA","CH9F","CTFi","CWBI","Cdxa","CfXC","CuOt","DLhn","DaRl","EW2V","Ed7I","Edxu","FF6X","FUXG","FVfY","G1Wo","G5e0","GXRO","Gerr","Giow","H+yo","H7XF","HEbw","Hjy1","IG1u","Ib8C","IxLI","J78i","JHhp","JoNN","K9S6","Kk5c","LGOv","M0o5","NQVK","Nxm2","OfWw","Onz0","P2KE","P7XM","PsDL","Q2zc","Q8G9","QYZq","QihY","QlAO","QpuX","RoFp","S8i6","ST+o","So5M","T9HO","TTI7","Titl","UWVS","Ujlg","V/f9","W7sv","WGjm","WnY+","XOdh","Xhqo","XseE","Xudb","YQlv","YskG","ZDAU","afKu","at63","au/U","b7Uv","bwZN","cqoG","d04V","eA/Y","eM9k","eNQB","fSpj","fYqa","fiWp","fnjI","gvAe","hwdV","hyYz","iUdu","jIre","k+aG","k8Q4","kVK+","kWvd","kZyI","lWpZ","lm0R","lqUa","mObS","n53Y","n5OK","nJOo","nYpo","nkPT","oJl4","olUY","pW3x","q83t","qPBE","qbxn","qiJe","rXFu","s+zB","sipE","t9FE","tCC2","tjlA","uDfV","v3KY","vTaS","wNhr","widk","x2TB",0,1,"tcrS","tnIz","ubW+",2,3,"+DxB","/ayr","6lN/","7ckf","86MQ","8Spv","ANxK","B/J0","C+gy","E+IA","ITfd","Iqt3","KAEN","MwBp","MzeL","NNVn","OA+I","OZ/i","Pa+m","QJsb","QTa/","RKMU","Sc7j","V+K4","Vh22","WKKt",4,"WRkp","Xn1i","aqI/","b+dc","ehAg",5,"0ROu","8cin","BfC4","DLvh","QqdZ","Z2+3","bu2F","dlgc","fZJM","i5UE","kBkV","lF1L","nSiv","qVij","qlaj","rE/R","roQf","sZro","tOiH","tSWc","tpL1","tz+M","uagp","uu6U","wk3p","zzXz",6,7,"u0Sq","usKN","uzSA","vZ2G","w8CP","wRn4","wq4j",8,"+3Gp","+7oY","+Fos","+K+b","+KTK","+Qka","+c4W","+iFO","/RFl","1+5i","2zpl","3L66","4/ic","4sDh","5Tg0","711d","7Ix3","7dW+","81by","88Gu","8J/B","9F0J","9Nap","AnK5","B5Mt","BKMn","Ba7A","BkRI","BmQL","DRdP","Dw+G","DzJC","EA7m","EEGq","Efrf","FbP/","G6z8","Gi0A","GiOz","HTXX","HlQe","Ioao","JI00","Juji","Jxpl","KfSR","LsHQ","Lwbf","Lx/H","MrPd","NSvM","Nq3d","O0oS","OBhP","OYk8","Ojt5","PGcv","Pzom","Q1l4","QIyF","QcOe","QkVN","Rkpk","SKAX","Syy6","T1AV","THLb","TM95","TP7S","UGzO","VOtZ","VVms","VYtm","WwFo","XQvf","XYm9","ZQT/","Zss7","b2z7","bNQv","ccyi","cvCv","dATH","dTAl","dt0z","eHBW","gFfm","heNW","hgQt","hypo","iGDq","itsj","japM","jeLo","juv8","l9OW","lQqw","lreK","mTTR","mv/X","nW7/","oCl/","oPLb","otv/","p8yl","pFRH","ql/k","rJ8t","sEfC","sVjb","srvI","t2Dn","t8r4","tLB3","trA2","tu5P","uDUr","w/wX","wME1","wclG","wkyg","wrZu","xI/X","xbjo","xkGU","yHx3","yOY4","yP5f","zEVN","zoYe",95,96,97,"+NVA","+a1H","+hIS","/9aa","/FUP","/UlZ","/cAr","/cxE","/kV6","/oaI","0+8E","0/Sa","03A+","03kh","05vW","09fa","0Cz8","0JNc","0Lb2","0cit","0oIH","0ycA","0zF4","10Fh","1I1M","1Mqz","1YUG","1hJj","1lwE","1w4i","1z8A","23p7","24hK","2ESN","2M62","2MPD","2Tsy","2V9f","2fFf","2gN3","2gzu","2jIc","2oSx","3/fG","34jG","3A9y","3Fdi","3Mta","3Rsk","3WF5","3qCu","3rx1","3y9D","44Ds","4B58","4bUh","4dMO","4kuk","4qC0","4rho","4sI4","4uTw","4y0V","51B1","51f4","5DEy","5RaG","5TxY","5Y4S","5glh","5v8Y","5zkI","62hx","6BQ9","6OMU","6lNC","6sVZ","746U","77Zs","79sc","7CD4","7GkX","7afs","7fqy","7lZ/","7zd4","7zrB","87dK","8ATB","8HAY","8HsV","8Ngs","8XyJ","8Ydt","8gvo","8z58","9B1q","9GDS","9XAT","9XeP","9Y+e","9fML","9ggG","9o+z","9o5J","A+jI","A90E","A9l+","AKMP","AP2z","AYZB","AbCa","Ag8Z","AhDq","AhHn","ApJL","B8du","BEdG","BFtn","BUKB","BjKj","BphH","Brdl","BwZh","C/vA","C1Q+","C6rC","C9rm","CClx","CH3K","CHaL","CMvH","CMye","CRAX","CZ1j","CdFp","Cg/j","CjF5","CjOT","Comh","Cwc5","CxEt","D3Dy","DBK7","DSRE","DTDp","Dvnd","DyzK","E+ie","E1F2","E2jh","E4kL","EIAu","EOst","EOzo","EPS+","ETIr","EWX2","EffR","EpBk","EwQA","ExA7","EzsQ","FWmy","Fuct","FvUK","G2kB","G300","GDhZ","GJhM","GNiM","GR/f","GTV5","GZrW","Gb1F","Gbu0","GoyQ","GvMn","Gw4z","H4T2","H6Gb","H8j4","HDyB","HOxn","HPyo","HdwC","Hvzi","HyZH","I/Lx","I01J","IErV","IOzZ","IPZY","J+ZK","JC6p","JCAc","JEKa","JHRd","JHgL","JQT/","JSQU","JTzB","JYp7","JkKi","JlLP","K3mO","KDc4","KMkd","KTWA","KaET","KfNM","KgQ1","Krc3","Ku4m","Kz5y","L8xA","LCkn","LNDK","LRks","LUcL","LXxW","LcsW","LeU+","LexI","Ll0s","M/lh","M1Kb","MD5Z","MI8n","MLba","MMmD","MNXI","MNsG","MXAL","Md8J","MqQJ","MrjW","Msxo","MvK1","MvSz","Mzro","N0LK","N2jm","ND7S","NKxu","NR8r","NdvO","NpX+","Npjl","NykK","O7RO","OBOq","OBgg","OFRW","OKK6","OLod","OOlL","OSDi","Of+w","OhXs","OhnE","POMm","PTeM","Po65","PpN6","Q4rV","Q631","QDVR","QFiB","QRH4","QRHv","QVNv","QY8A","QaAZ","Qd/k","QiAa","QkVE","QoRX","QqLw","QuOb","QvA3","R3nR","R8sh","R9As","RMfO","Rpxm","S3by","S5K1","SBYE","SP4F","Sdnv","SfRM","SmQN","SvYn","SyXz","T1ee","T8No","TQUy","TRQU","TT2d","Tcc1","TdD3","UCkY","UNi/","URDS","Uex7","UpF+","UsjR","Uzvx","V0C4","V6Ve","VKpo","VPJY","VaNO","VrUr","Vtyv","VvMK","Vxe3","W3HW","W9cx","WBhO","WFjJ","WFqU","WQDh","WYAk","WhO6","WqXY","WwIK","X+cX","XNtB","XQgg","XSiN","XXBq","XXUj","Xi7e","XtJs","XtXU","YESw","YHy6","YO3V","YoN+","Yr1X","Yzr4","Z0cm","Z7AB","Z7SF","Z8oC","ZCR3","ZCpW","ZEK9","ZIMw","ZQ78","ZWtO","ZkA/","ZlPH","ZvGG","Zxox","a+JD","aBYw","adU4","ajgA","al6g","aokT","b6+/","b80T","bIAE","bNda","bY76","ba9Q","baJR","bdZi","bdgK","bexQ","bfR1","biBo","bk7F","bucE","c2dO","c6wG","c9ML","cCpf","cGHE","cIJc","cMOf","cMvZ","cQVX","cUpc","ci+S","cl4r","cldp","cq/+","cqdO","cv67","cyIc","d6R0","dBaI","dD9F","dFcq","dH+W","dcwN","dgXF","dwSY","e0ae","e1ni","e4Nc","e5cp","e7zJ","eA/6","eC1c","eLzo","eUgh","ebwN","eizg","ekgI","ep4t","epnl","eq1K","erNZ","f3pb","fD5p","fGT3","fR/l","fTjV","feEw","fjLI","fmRc","fpMC","ftKO","g//x","g2Dh","g9U9","gCVg","gCq4","gHzd","gJAb","gqHg","gslv","gtyc","hFdI","hHjc","hJVp","hLeX","hbMA","i/Ef","i/Rh","i04g","i3FT","iBpk","iDAx","iH6r","iJk1","iLY9","iNS8","iTeK","iamm","ic2d","ij/i","imOK","iuje","j+Jy","j1uu","j2o1","j3O6","jAJ/","jVwG","jfd1","jqj9","jqkw","jrbv","k+1r","k76M","k7mE","k7pc","k9mg","kYye","kdPm","kekF","kqbb","kw+w","l2gE","lKfe","lSCD","lY/7","li8W","ljhN","lm/5","lrmC","luic","mAz1","mc0g","mdPL","mwIZ","n01l","n18v","n90j","nB0o","nD70","nlbu","nmnc","nnTU","nrBJ","nrhi","nuFA","oAeH","oKJv","oQaD","oiKk","or5M","p3Ex","p5tG","p8ms","pAvP","pEiA","pI2L","pSRY","pg8w","pmY6","ptcw","q/I2","q8qy","qH2V","qNAo","qZTm","qj0h","qo7Q","r0BQ","rEGp","rSVQ","rugR","rzPn","s7Km","sCuW","sEf8","sFUC","sM1p","sQqM","sStQ","scqD","seXi","shjB","siPX","snIX","sswD","synD","t49l","t9D7","tADe","tF8Y","tMB7","tTk5","tX9W","tXSY","tYmi","tadb","twdY","u8Dt","uACm","uAX5","uDWl","uWgD","ufhN","ujyM","undH","ut/Y","v+CO","vATl","vMFT","vRMv","vVA1","vf12","vl9R","w29/","w9QG","wF/u","wJg7","wQH0","wZgz","woZy","wsa1","wxcJ","x/UI","xCP8","xG9w","xONI","xQUE","xYNL","xYSL","xmOD","y1pI","y3CF","yEoX","yGk4","yI7H","yKqg","yqFB","yrU1","z+mr","z3hU","z6b+","z71Z","zN7H","zQEy","zZ0H","zZGF","zrhQ","zwmu"],"gssp":true}</script><script nomodule="" src="./What is Git__files/polyfills-cfca0352513b23f5cd87.js.download"></script><script async="" src="./What is Git__files/cb1608f2.8be791501eb36166e856.js.download"></script><script async="" src="./What is Git__files/6bed4a6a7a762349ccc50bf59be777fe8d84fef6.ce900f70d6e715c94ff2.js.download"></script><script async="" src="./What is Git__files/208.6d151e8478388dfd57be.js.download"></script><script async="" src="./What is Git__files/a2ae04b7a833ed6fd1ce37130abd264ebd97e830.a88cdb11bc5776f5bf57.js.download"></script><script src="./What is Git__files/main-d9b1724aca56a69b62fb.js.download" async=""></script><script src="./What is Git__files/webpack-7e25c12d7beeac3a38cf.js.download" async=""></script><script src="./What is Git__files/framework.3cf562bb8baea43ab517.js.download" async=""></script><script src="./What is Git__files/commons.2b438201b1eebd47096e.js.download" async=""></script><script src="./What is Git__files/e5e771bd30370f474e903313af4271a4c93719da.c444dbdf01bcbc564973.js.download" async=""></script><script src="./What is Git__files/980e87bb855c8a765aa8b63daf4e329f4668e2c9.819f29611d606b7b0ff9.js.download" async=""></script><script src="./What is Git__files/d908d2ccfcc40e707a5bc0a2bb395e8674a5ca72.72e64403cd7db46bde5a.js.download" async=""></script><script src="./What is Git__files/5871da5d65e55dd3f7211817b45524583965f99a.e0ee458a071abf83ee86.js.download" async=""></script><script src="./What is Git__files/ab3fd235c0063d257cbe5afe39405e76340ba27a.aba30ef0f6e767ba8cfe.js.download" async=""></script><script src="./What is Git__files/4e8bfbd537fc53fab5c471aa7809402a14355ee0.5bd94a6b47448a30a1ef.js.download" async=""></script><script src="./What is Git__files/41436f92c375dd9cd244f3dc92ec661bba0dbb82.d3524027514b861c13ec.js.download" async=""></script><script src="./What is Git__files/4ea6f1a74dd6038c9527c3b6c408d95bc9e584ca.4c6e95b99282444c0b99.js.download" async=""></script><script src="./What is Git__files/61c07425e08786eaaaac198bf1f10df8a3af8ab4.e2a89187f8ccb99e59f8.js.download" async=""></script><script src="./What is Git__files/941b621b2347af1650a375472daaf58379ce1d2f.92f88c584f2d7453a260.js.download" async=""></script><script src="./What is Git__files/f1c87184703526c6230769688c8a82ce7d3e6e84.b2e070c4a831bf2d2f78.js.download" async=""></script><script src="./What is Git__files/f04e4bda86fec8fcc45fe140b0c7cac556b27765.338c70a84029ed7bd9c0.js.download" async=""></script><script src="./What is Git__files/66485a727f8019d1c60ee9d3d957f5c13e58312f.ac2dfdce279b396115c6.js.download" async=""></script><script src="./What is Git__files/b4bd33ea001a76e40d64f33e4091039ace7f552c.e60ad8bb147cf31f8402.js.download" async=""></script><script src="./What is Git__files/480b3523d85ca03ebbf5117d38fb8fe92edb11c6.49e444cc50acce462323.js.download" async=""></script><script src="./What is Git__files/_app-a536b36b0d73e3206777.js.download" async=""></script><script src="./What is Git__files/23f02a33ef50642cdbe8d441133844b532e83a5e.d44d4ef72ad9e5ae89a5.js.download" async=""></script><script src="./What is Git__files/51c925bec50705ee9faa262cdaa9ab2fbd56062c.cbdc8fc9ca9a379c16b5.js.download" async=""></script><script src="./What is Git__files/5d83d242c655da077ebf2e202aa39652109eabf1.01186f3e9d1a151746a2.js.download" async=""></script><script src="./What is Git__files/8220a32b6df89e6d4caf77dcc15d861e1ec89623.b6c2ea66eab1ecc7d9ed.js.download" async=""></script><script src="./What is Git__files/438c2c98709fb01db7fac2ed98499c3b88ab535b.a6d95bc34b26f4ebee81.js.download" async=""></script><script src="./What is Git__files/c90ea11cac6326305fc8b7fd20ce1ef8c060c9e9.96e0455369797b875467.js.download" async=""></script><script src="./What is Git__files/bed8c850cd3d15202c344ca5804dc72cd1d794bc.69e3a681e716cbc18ce5.js.download" async=""></script><script src="./What is Git__files/30bd572feb59c908f55b65a868bdc61e49c7bcb7.5e46a851f5a7d0dfbe84.js.download" async=""></script><script src="./What is Git__files/017229d987c0ff3fec686590661dfd5944f6850c.ff15ea897844d0ba2719.js.download" async=""></script><script src="./What is Git__files/eb77ac5beb715ad0ccd41257c2def8460035fd4e.e677012460059cf05b71.js.download" async=""></script><script src="./What is Git__files/[shotUrl]-aa58a560833c323adfc2.js.download" async=""></script><script src="./What is Git__files/_buildManifest.js.download" async=""></script><script src="./What is Git__files/_ssgManifest.js.download" async=""></script>    
+    <script type="text/javascript" id="">(function(a,c,e,f,d,b){a.hj=a.hj||function(){(a.hj.q=a.hj.q||[]).push(arguments)};a._hjSettings={hjid:1142875,hjsv:6};d=c.getElementsByTagName("head")[0];b=c.createElement("script");b.async=1;b.src=e+a._hjSettings.hjid+f+a._hjSettings.hjsv;d.appendChild(b)})(window,document,"https://static.hotjar.com/c/hotjar-",".js?sv\x3d");</script>
+
+    
+    <script type="text/javascript" id="">!function(b,e,f,g,a,c,d){b.fbq||(a=b.fbq=function(){a.callMethod?a.callMethod.apply(a,arguments):a.queue.push(arguments)},b._fbq||(b._fbq=a),a.push=a,a.loaded=!0,a.version="2.0",a.queue=[],c=e.createElement(f),c.async=!0,c.src=g,d=e.getElementsByTagName(f)[0],d.parentNode.insertBefore(c,d))}(window,document,"script","https://connect.facebook.net/en_US/fbevents.js");fbq("init","1637285686566701");fbq("track","PageView");</script>
+    
+
+    
+    <script type="text/javascript" id="">!function(d,e,f,a,b,c){d.twq||(a=d.twq=function(){a.exe?a.exe.apply(a,arguments):a.queue.push(arguments)},a.version="1.1",a.queue=[],b=e.createElement(f),b.async=!0,b.src="//static.ads-twitter.com/uwt.js",c=e.getElementsByTagName(f)[0],c.parentNode.insertBefore(b,c))}(window,document,"script");twq("init","nz5z7");twq("track","PageView");</script>
+    
+
+    
+    <script type="text/javascript" id="" src="./What is Git__files/17085.js.download"></script>
+
+    
+    <script type="text/javascript" id="">_linkedin_partner_id="1107276";window._linkedin_data_partner_ids=window._linkedin_data_partner_ids||[];window._linkedin_data_partner_ids.push(_linkedin_partner_id);(function(){var b=document.getElementsByTagName("script")[0],a=document.createElement("script");a.type="text/javascript";a.async=!0;a.src="https://snap.licdn.com/li.lms-analytics/insight.min.js";b.parentNode.insertBefore(a,b)})();</script><iframe name="_hjRemoteVarsFrame" title="_hjRemoteVarsFrame" id="_hjRemoteVarsFrame" src="./What is Git__files/box-469cf41adb11dc78be68c1ae7f9457a4.html" style="display: none !important; width: 1px !important; height: 1px !important; opacity: 0 !important; pointer-events: none !important;"></iframe><script src="./What is Git__files/adsct" type="text/javascript"></script><script src="./What is Git__files/caf53a100c1cf2aac36b78866f1b947a30402092.44b10948b53d3109416b.js.download"></script><script src="./What is Git__files/ee9737fbbc087befb8d59d661cf1a60c26e9cb98.d460b54e735999884406.js.download"></script><script src="./What is Git__files/197dadf55689241dec8b4d5984dad0aa27708c99.f7a4fc3e90eb3cc2fe24.js.download"></script><script src="./What is Git__files/6ba18066ad5f36a1f1a704f171d8f7f087031f6c.bffb6ed1d7ad59592023.js.download"></script><script src="./What is Git__files/bd42c76cc555bcbea51ecd2e196900b9ff043284.c66bb1939e5feaa71e37.js.download"></script><script src="./What is Git__files/9249b1a60572f3e7608ce86426b02a84f40cfd5d.a0cecb4b2905cfaae2f8.js.download"></script><script src="./What is Git__files/edpresso-268320a1bb5e1aa8470c.js.download"></script></body></html>
